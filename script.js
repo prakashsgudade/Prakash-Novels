@@ -6,47 +6,63 @@ function scrollToNovels() {
 function toggleDark() {
   document.body.classList.toggle("dark");
 }
-/* ================= FONT SIZE CONTROLS ================= */
+/* ================= BIG DARK MODE BUTTON ================= */
+.dark-toggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: #000;
+  color: #fff;
+  padding: 14px 18px;
+  border-radius: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+body.dark .dark-toggle {
+  background: #fff;
+  color: #000;
+}
+
+/* ================= BIG FONT CONTROLS ================= */
 .font-controls {
   position: fixed;
   top: 15px;
   left: 15px;
   display: flex;
-  gap: 6px;
-  z-index: 999;
+  gap: 10px;
+  z-index: 1000;
 }
 
 .font-controls button {
-  padding: 6px 10px;
+  padding: 14px 18px;
+  font-size: 18px;
+  border-radius: 12px;
   border: none;
-  border-radius: 6px;
   cursor: pointer;
-  font-size: 14px;
   background: #000;
   color: #fff;
+}
+
+.font-controls button:active {
+  transform: scale(0.95);
 }
 
 body.dark .font-controls button {
   background: #fff;
   color: #000;
-    }
-let currentFontSize = 18; // default font size
-
-function increaseFont() {
-  if (currentFontSize < 24) {
-    currentFontSize += 2;
-    document.body.style.fontSize = currentFontSize + "px";
-  }
 }
 
-function decreaseFont() {
-  if (currentFontSize > 14) {
-    currentFontSize -= 2;
-    document.body.style.fontSize = currentFontSize + "px";
+/* ================= MOBILE EXTRA COMFORT ================= */
+@media (max-width: 600px) {
+  .dark-toggle {
+    padding: 16px 20px;
+    font-size: 22px;
   }
-}
 
-function resetFont() {
-  currentFontSize = 18;
-  document.body.style.fontSize = "18px";
+  .font-controls button {
+    padding: 16px 20px;
+    font-size: 20px;
+  }
 }
