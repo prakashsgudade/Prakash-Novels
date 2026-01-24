@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #fff;
+  color: #222;
+}
+
+.dark {
+  background: #111;
+  color: #eee;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: #222;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #00aaff;
+}
+
+.author {
+  text-align: center;
+  padding: 20px;
+}
+
+.author img {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.novels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.dark .card {
+  background: #222;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #ff4c4c;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
