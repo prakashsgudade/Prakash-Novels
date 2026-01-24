@@ -66,8 +66,20 @@ body {
 
 .donate-footer {
   text-align: center;
-  padding: 40px 20px;
-  font-size: 16px;
+  padding: 60px 20px;
+  font-size: 18px;
+}
+
+.donate-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 16px 40px;
+  font-size: 20px;
+  background: crimson;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 0 15px rgba(220,20,60,0.5);
 }
 
 .dark {
