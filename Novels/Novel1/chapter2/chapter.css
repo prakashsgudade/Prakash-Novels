@@ -1,78 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  padding: 0;
   font-family: Georgia, serif;
-  background: #f8f5f1;
-  color: #222;
+  background: #0e0e0e;
+  color: #eee;
+  overflow-x: hidden;
+}
+
+.chapter-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.page {
+  margin-bottom: 80px;
+  font-size: 18px;
   line-height: 1.8;
 }
 
-body.dark {
-  background: #121212;
-  color: #e0e0e0;
-}
-
-/* TOP BAR */
-.top-bar {
-  display: flex;
-  gap: 10px;
-  padding: 10px;
-  position: sticky;
-  top: 0;
-  background: inherit;
-}
-
-.top-bar button {
-  font-size: 18px;
-  padding: 8px 12px;
-}
-
-/* PAGE COUNTER */
-.page-indicator {
-  text-align: center;
-  margin: 10px;
+.page-counter {
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  background: #000;
+  padding: 6px 12px;
+  border-radius: 20px;
   font-size: 14px;
 }
 
-/* CONTENT */
-.chapter-container {
-  padding: 20px;
-  max-width: 700px;
-  margin: auto;
+.top-controls {
+  position: fixed;
+  top: 10px;
+  left: 15px;
+  display: flex;
+  gap: 8px;
 }
 
-.chapter-container h1 {
-  text-align: center;
-  margin-bottom: 30px;
+.top-controls button {
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
 }
 
-/* PAGE FEEL */
-.page {
-  margin-bottom: 60px;
-}
-
-/* NAV BUTTONS */
 .nav-buttons {
   display: flex;
-  justify-content: space-around;
-  padding: 20px;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 40px;
 }
 
-.nav-buttons a {
-  text-decoration: none;
-  padding: 12px 20px;
-  background: #000;
+.nav-btn {
+  padding: 10px 16px;
+  background: #222;
   color: #fff;
-  border-radius: 8px;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
-/* DONATE */
-.donate {
+.donate-footer {
   text-align: center;
-  padding: 30px;
+  padding: 40px 20px;
+  font-size: 16px;
 }
 
-.donate button {
-  padding: 12px 30px;
-  font-size: 16px;
+.dark {
+  background: #f5f5f5;
+  color: #111;
 }
