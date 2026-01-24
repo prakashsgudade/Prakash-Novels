@@ -1,53 +1,40 @@
-const body = document.body;
-const darkBtn = document.getElementById("darkToggle");
-const soundBtn = document.getElementById("soundToggle");
-const bookmarkBtn = document.getElementById("bookmarkBtn");
-const pageNum = document.getElementById("pageNum");
+// PAGE COUNTER
+const pages = document.querySelectorAll(".page");
+const counter = document.getElementById("pageCounter");
 
-const flipSound = new Audio("page-flip.mp3");
-
-/* DARK MODE */
-if (localStorage.getItem("darkMode") === "on") {
-  body.classList.add("dark");
-}
-
-darkBtn.onclick = () => {
-  body.classList.toggle("dark");
-  localStorage.setItem("darkMode",
-    body.classList.contains("dark") ? "on" : "off"
-  );
-};
-
-/* SOUND */
-let soundOn = localStorage.getItem("sound") !== "off";
-
-soundBtn.textContent = soundOn ? "🔊" : "🔇";
-
-soundBtn.onclick = () => {
-  soundOn = !soundOn;
-  localStorage.setItem("sound", soundOn ? "on" : "off");
-  soundBtn.textContent = soundOn ? "🔊" : "🔇";
-};
-
-/* PAGE COUNT */
 window.addEventListener("scroll", () => {
-  const pages = document.querySelectorAll(".page");
   pages.forEach((page, index) => {
     const rect = page.getBoundingClientRect();
-    if (rect.top <= 150 && rect.bottom >= 150) {
-      pageNum.textContent = index + 1;
-      if (soundOn) flipSound.play();
+    if (rect.top <= window.innerHeight / 2 && rect.bottom >= 0) {
+      counter.innerText = "Page " + (index + 1);
     }
   });
 });
 
-/* BOOKMARK */
-bookmarkBtn.onclick = () => {
+// DARK MODE
+document.getElementById("darkToggle").onclick = () => {
+  document.body.classList.toggle("dark");
+};
+
+// BOOKMARK (REAL)
+document.getElementById("bookmarkBtn").onclick = () => {
   localStorage.setItem("chapter2Bookmark", window.scrollY);
-  alert("Bookmark Saved ❤️");
+  alert("🔖 Bookmark saved");
 };
 
 window.onload = () => {
   const saved = localStorage.getItem("chapter2Bookmark");
   if (saved) window.scrollTo(0, saved);
 };
+
+// SOUND
+const sound = document.getElementById("flipSound");
+let soundOn = true;
+
+document.getElementById("soundToggle").onclick = () => {
+  soundOn = !soundOn;
+};
+
+document.addEventListener("scroll", () => {
+  if (soundOn) sound.play();
+});
