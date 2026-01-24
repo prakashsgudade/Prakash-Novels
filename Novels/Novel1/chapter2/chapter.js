@@ -1,9 +1,10 @@
 const body = document.body;
-const darkBtn = document.getElementById("darkToggle");
-const soundBtn = document.getElementById("soundToggle");
+const darkToggle = document.getElementById("darkToggle");
+const soundToggle = document.getElementById("soundToggle");
 const bookmarkBtn = document.getElementById("bookmarkBtn");
 const pageNum = document.getElementById("pageNum");
 
+const pages = document.querySelectorAll(".page");
 const flipSound = new Audio("page-flip.mp3");
 
 /* DARK MODE */
@@ -11,27 +12,26 @@ if (localStorage.getItem("darkMode") === "on") {
   body.classList.add("dark");
 }
 
-darkBtn.onclick = () => {
+darkToggle.onclick = () => {
   body.classList.toggle("dark");
-  localStorage.setItem("darkMode",
+  localStorage.setItem(
+    "darkMode",
     body.classList.contains("dark") ? "on" : "off"
   );
 };
 
 /* SOUND */
 let soundOn = localStorage.getItem("sound") !== "off";
+soundToggle.textContent = soundOn ? "🔊" : "🔇";
 
-soundBtn.textContent = soundOn ? "🔊" : "🔇";
-
-soundBtn.onclick = () => {
+soundToggle.onclick = () => {
   soundOn = !soundOn;
   localStorage.setItem("sound", soundOn ? "on" : "off");
-  soundBtn.textContent = soundOn ? "🔊" : "🔇";
+  soundToggle.textContent = soundOn ? "🔊" : "🔇";
 };
 
-/* PAGE COUNT */
+/* PAGE COUNTER + FLIP SOUND */
 window.addEventListener("scroll", () => {
-  const pages = document.querySelectorAll(".page");
   pages.forEach((page, index) => {
     const rect = page.getBoundingClientRect();
     if (rect.top <= 150 && rect.bottom >= 150) {
@@ -44,7 +44,7 @@ window.addEventListener("scroll", () => {
 /* BOOKMARK */
 bookmarkBtn.onclick = () => {
   localStorage.setItem("chapter2Bookmark", window.scrollY);
-  alert("Bookmark Saved ❤️");
+  alert("Bookmark saved ❤️");
 };
 
 window.onload = () => {
