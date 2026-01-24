@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Novel One | Prakash</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<!-- 🌙 Dark mode & Font already work here -->
+
+<section class="novel-hero">
+
+  <img src="../images/novel1.jpg" class="novel-cover">
+
+  <h1 class="novel-title">Novel One</h1>
+  <p class="novel-author">by Prakash</p>
+
+  <p class="novel-desc">
+    Yeh kahani hai un yaadon ki  
+    jo chhod jaane ke baad bhi saath rehti hain.  
+    Pyaar, khamoshi aur waqt ke beech uljhi ek zindagi.
+  </p>
+
+</section>
+
+<!-- ================= PROGRESS ================= -->
+<section class="progress-area">
+  <div class="progress-text">
+    Reading Progress: <span id="progressPercent">0%</span>
+  </div>
+  <div class="progress-bar">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+</section>
+
+<!-- ================= CHAPTER LIST ================= -->
+<section class="chapters-area">
+
+  <h2>Chapters</h2>
+  <p class="chapter-count">Total Chapters: 15</p>
+
+  <div class="chapter-list">
+    <a href="../chapters/novel1-ch1.html" class="chapter-btn">Chapter 1</a>
+    <a href="../chapters/novel1-ch2.html" class="chapter-btn">Chapter 2</a>
+    <a href="../chapters/novel1-ch3.html" class="chapter-btn">Chapter 3</a>
+    <a href="../chapters/novel1-ch4.html" class="chapter-btn">Chapter 4</a>
+    <a href="../chapters/novel1-ch5.html" class="chapter-btn">Chapter 5</a>
+  </div>
+
+</section>
+
+<!-- ================= DONATE ================= -->
+<section class="support">
+  <h2>Support This Novel ❤️</h2>
+  <button class="upi-btn">UPI : prakash@upi</button>
+</section>
+
+<footer>
+  © 2026 Prakash
+</footer>
+
+<script src="../script.js"></script>
+<script>
+  /* Demo progress (future real logic yahin aayega) */
+  let progress = 0;
+  document.getElementById("progressFill").style.width = progress + "%";
+</script>
+
+</body>
+</html>
