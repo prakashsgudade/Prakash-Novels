@@ -1,6 +1,16 @@
 // PAGE COUNTER
 const pages = document.querySelectorAll(".page");
 const counter = document.getElementById("pageCounter");
+const totalPages = pages.length;
+
+window.addEventListener("scroll", () => {
+  pages.forEach((page, index) => {
+    const rect = page.getBoundingClientRect();
+    if (rect.top <= window.innerHeight / 2 && rect.bottom >= 0) {
+      counter.innerText = `Page ${index + 1} / ${totalPages}`;
+    }
+  });
+});
 
 window.addEventListener("scroll", () => {
   pages.forEach((page, index) => {
