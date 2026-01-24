@@ -1,46 +1,180 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Adhuri Mohabbat</title>
+  <title>अधूरी मोहब्बत</title>
+
+  <!-- BEST GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- MAIN CSS -->
   <link rel="stylesheet" href="../style.css">
+
+  <style>
+    body{
+      background: linear-gradient(180deg,#0f2027,#203a43,#2c5364);
+      color:#fff;
+      font-family:'Poppins',sans-serif;
+      margin:0;
+    }
+
+    .novel-wrap{
+      max-width:900px;
+      margin:auto;
+      padding:30px 20px;
+    }
+
+    .cover{
+      width:100%;
+      height:260px;
+      background:linear-gradient(135deg,#ff9a00,#ff6a00);
+      border-radius:20px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:28px;
+      font-family:'Playfair Display',serif;
+      margin-bottom:25px;
+    }
+
+    h1{
+      font-family:'Playfair Display',serif;
+      font-size:36px;
+      margin:10px 0;
+    }
+
+    .author{
+      color:#ffd369;
+      margin-bottom:15px;
+    }
+
+    .synopsis{
+      background:rgba(0,0,0,0.3);
+      padding:20px;
+      border-radius:15px;
+      line-height:1.7;
+      margin-bottom:30px;
+    }
+
+    .progress-box{
+      margin-bottom:30px;
+    }
+
+    .progress{
+      height:10px;
+      background:#333;
+      border-radius:10px;
+      overflow:hidden;
+    }
+
+    .progress span{
+      display:block;
+      height:100%;
+      width:20%;
+      background:#ffb703;
+    }
+
+    .chapters{
+      margin-top:20px;
+    }
+
+    .chapter{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:rgba(255,255,255,0.1);
+      padding:18px 20px;
+      border-radius:14px;
+      margin-bottom:15px;
+      text-decoration:none;
+      color:#fff;
+      font-size:18px;
+    }
+
+    .chapter:hover{
+      background:rgba(255,183,3,0.3);
+    }
+
+    .donate{
+      margin-top:40px;
+      text-align:center;
+    }
+
+    .donate a{
+      display:inline-block;
+      background:#ff6a00;
+      padding:16px 40px;
+      border-radius:40px;
+      color:#fff;
+      font-size:18px;
+      text-decoration:none;
+      margin:10px;
+    }
+
+    .footer-nav{
+      text-align:center;
+      margin-top:30px;
+    }
+
+    .footer-nav a{
+      color:#ffd369;
+      text-decoration:none;
+      font-size:16px;
+    }
+  </style>
 </head>
+
 <body>
 
-  <header class="toc-header">
-    <h1>अधूरी मोहब्बत</h1>
-    <div class="writer-name">by Prakash Gudade</div>
-  </header>
+<div class="novel-wrap">
 
-  <section class="toc-intro">
-    कुछ कहानियाँ पूरी होकर भी अधूरी रह जाती हैं…
-  </section>
+  <!-- COVER -->
+  <div class="cover">अधूरी मोहब्बत</div>
 
-  <div class="toc-box">
+  <!-- TITLE -->
+  <h1>अधूरी मोहब्बत</h1>
+  <div class="author">by Prakash Gudade</div>
 
-    <a class="toc-row toc-head">
-      <span>#</span>
-      <span>Chapter</span>
-      <span>Read</span>
-    </a>
+  <!-- SYNOPSIS -->
+  <div class="synopsis">
+    कुछ कहानियाँ पूरी होकर भी अधूरी रह जाती हैं।  
+    यह कहानी है उन एहसासों की जो कहे नहीं गए,  
+    और उन वादों की जो निभाए नहीं जा सके।
+  </div>
 
-    <a class="toc-row" href="adhuri-mohabbat/chapter1.html">
-      <span>01</span>
-      <span>पहली मुलाक़ात</span>
+  <!-- PROGRESS -->
+  <div class="progress-box">
+    Reading Progress
+    <div class="progress">
+      <span></span>
+    </div>
+    Chapter 1 of 5
+  </div>
+
+  <!-- CHAPTER LIST -->
+  <div class="chapters">
+    <a href="chapter1.html" class="chapter">
+      <span>Chapter 1 – पहली मुलाक़ात</span>
       <span>▶</span>
     </a>
 
-    <a class="toc-row" href="adhuri-mohabbat/chapter2.html">
-      <span>02</span>
-      <span>खामोश वादे</span>
+    <a href="chapter2.html" class="chapter">
+      <span>Chapter 2 – अधूरे वादे</span>
       <span>▶</span>
     </a>
-
   </div>
 
-  <div class="toc-bottom">
-    <a href="../index.html" class="nav-btn">🏠 Home</a>
+  <!-- DONATE -->
+  <div class="donate">
+    <a href="#">❤️ Support via UPI</a>
   </div>
+
+  <!-- HOME -->
+  <div class="footer-nav">
+    <a href="../index.html">← Back to Home</a>
+  </div>
+
+</div>
 
 </body>
-  </html>
+</html>
