@@ -3,9 +3,30 @@ body {
   font-family: Georgia, serif;
   background: #f5efe6;
   color: #2b2b2b;
+  transition: 0.3s;
 }
 
-/* Page Counter */
+/* DARK MODE */
+body.dark {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+/* TOGGLE BUTTON */
+.dark-toggle {
+  position: fixed;
+  left: 12px;
+  top: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 50%;
+  font-size: 16px;
+  z-index: 1000;
+}
+
+/* PAGE COUNTER */
 .page-counter {
   position: fixed;
   top: 10px;
@@ -18,14 +39,12 @@ body {
   z-index: 999;
 }
 
-/* Container */
 .chapter-container {
   max-width: 720px;
   margin: auto;
   padding: 24px;
 }
 
-/* Titles */
 .chapter-title {
   text-align: center;
   font-size: 34px;
@@ -37,7 +56,6 @@ body {
   margin-bottom: 50px;
 }
 
-/* Pages */
 .page {
   margin-bottom: 90px;
   animation: fade 1s ease;
@@ -49,7 +67,6 @@ body {
   margin-bottom: 22px;
 }
 
-/* Navigation */
 .nav-buttons {
   display: flex;
   justify-content: space-between;
@@ -64,7 +81,6 @@ body {
   text-decoration: none;
 }
 
-/* Donate */
 .donate-footer {
   background: #111;
   color: #fff;
@@ -80,7 +96,6 @@ body {
   text-decoration: none;
 }
 
-/* Animation */
 @keyframes fade {
   from {opacity:0; transform: translateY(20px);}
   to {opacity:1; transform: translateY(0);}
@@ -88,4 +103,4 @@ body {
 
 @media (max-width:600px){
   .page p { font-size: 17px; }
-}
+        }
