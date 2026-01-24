@@ -1,117 +1,60 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Chapter 2 – Baatein Badhne Lagi</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- SAME CSS AS CHAPTER 1 -->
   <link rel="stylesheet" href="chapter.css">
 </head>
 <body>
 
-<!-- TOP CONTROLS (Dark / Sound / Bookmark) -->
-<div class="top-controls">
+<!-- TOP BAR -->
+<div class="top-bar">
   <button id="darkToggle">🌙</button>
-  <button id="soundToggle">🔊</button>
   <button id="bookmarkBtn">🔖</button>
+  <button id="soundToggle">🔊</button>
 </div>
 
-<!-- PAGE COUNTER (FROM CHAPTER 1 STYLE) -->
-<div class="page-counter" id="pageCounter">Page 1</div>
-
+<!-- CHAPTER -->
 <div class="chapter-container">
+  <h1>Chapter 2</h1>
+  <h2>“Baatein Badhne Lagi”</h2>
 
-  <h1 class="chapter-title">Chapter 2</h1>
-  <h2 class="chapter-subtitle">Baatein Badhne Lagi</h2>
+  <div class="chapter-text" id="chapterText">
 
-  <!-- PAGE 1 -->
-  <div class="page">
-    <p><b>Shuruaat.</b></p>
-    <p>
-      Pehli mulaqat ke baad,  
-      khamoshi zyada der tak tik nahi paayi.  
-      Jaise kuch tha jo kehna zaroori tha.
-    </p>
-  </div>
+<p>Us din baat kuch alag si thi...</p>
+<p>Shuruat sirf ek hello se hui thi...</p>
+<p>Par us hello ke peeche jo curiosity thi...</p>
+<p>Har message ke saath intezaar badhne laga...</p>
+<p>Waqt ka pata hi nahi chala...</p>
+<p>Raat ke 2 baje bhi aankhein jagi thi...</p>
+<p>Baatein ab sirf baatein nahi rahi...</p>
 
-  <!-- PAGE 2 -->
-  <div class="page">
-    <p><b>Messages.</b> 📱</p>
-    <p>
-      Pehle sirf “haan” aur “theek hai” tha,  
-      phir dheere-dheere baatein lambi hone lagi.  
-      Reply ka intezaar mehsoos hone laga.
-    </p>
-  </div>
+<p>Uski hasi screen ke paar mehsoos hoti thi...</p>
+<p>Kabhi ek line ka reply poori raat sochne par majboor kar deta...</p>
+<p>Phone silent par hota fir bhi dil awaaz sun leta...</p>
 
-  <!-- PAGE 3 -->
-  <div class="page">
-    <p><b>Muskaan.</b> 🌸</p>
-    <p>
-      Uski baaton me ek sukoon tha.  
-      Jaise wo sirf sun nahi rahi,  
-      balki samajh bhi rahi ho.
-    </p>
-  </div>
+<p>Yeh chapter sirf shabdon ka nahi tha...</p>
+<p>Yeh do dilon ke dheere dheere paas aane ka tha...</p>
 
-  <!-- PAGE 4 -->
-  <div class="page">
-    <p><b>Raat.</b> 🌙</p>
-    <p>
-      Raat ke sannate me,  
-      phone ki roshni hi kaafi thi.  
-      Baatein neend se zyada zaroori lagne lagi.
-    </p>
-  </div>
+<p>Baatein badh rahi thi...</p>
+<p>Aur saath hi dar bhi...</p>
+<p>Kahin yeh sirf aadat na ban jaye...</p>
 
-  <!-- PAGE 5 -->
-  <div class="page">
-    <p>
-      Har din kuch naya pata chalta.  
-      Pasand, darr, sapne —  
-      sab lafzon ke beech aa jaate.
-    </p>
-  </div>
+<p>Par sach yahi tha...</p>
+<p>Ab baat na ho toh din adhoora lagta tha...</p>
 
-  <!-- PAGE 6 -->
-  <div class="page">
-    <p>
-      Kabhi ek message  
-      poora din roshan kar deta.  
-      Shayad yahin se baatein  
-      sirf baatein nahi rahi.
-    </p>
-  </div>
-
-  <!-- PAGE 7 -->
-  <div class="page">
-    <p>
-      Dil samajh raha tha,  
-      par dimaag abhi chup tha.  
-      Baatein badh rahi thi…  
-      aur kahani bhi. ❤️
-    </p>
   </div>
 
   <!-- NAVIGATION -->
   <div class="nav-buttons">
-    <a href="../chapter1/index.html" class="nav-btn">⬅️ Previous Chapter</a>
-    <a href="../index.html" class="nav-btn">🏠 Novel Home</a>
-    <a href="../chapter3/index.html" class="nav-btn">Next Chapter ➡️</a>
+    <a href="../chapter1/index.html" class="btn">⬅ Previous</a>
+    <a href="../index.html" class="btn">🏠 Home</a>
+    <a href="../chapter3/index.html" class="btn">Next ➡</a>
   </div>
-
 </div>
 
-<!-- DONATE (FROM CHAPTER 1 STYLE) -->
-<div class="donate-footer">
-  ❤️ Agar yeh shabd dil tak pahuche ho  
-  <br><br>
-  <a href="#" class="donate-btn">Support / Donate</a>
-</div>
+<audio id="flipSound" src="page-flip.mp3"></audio>
 
-<!-- SAME JS AS CHAPTER 1 -->
 <script src="chapter.js"></script>
-
 </body>
   </html>
