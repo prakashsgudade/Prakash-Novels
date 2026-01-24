@@ -7,43 +7,90 @@
 </head>
 <body>
 
-<header class="header">
-  <h1>Prakash’s Novels</h1>
-  <button onclick="toggleDark()">🌙</button>
+<!-- ================= HEADER ================= -->
+<header class="top-header">
+  <h1>📖 Prakash’s Novels</h1>
+  <p class="tagline">Kahaniyan jo dil ke kone se likhi gayi hain</p>
+  <button class="dark-btn" onclick="toggleDark()">🌙 Dark Mode</button>
 </header>
 
-<section class="author">
-  <img src="images/author.jpg" alt="Author">
-  <p>Stories from heart, written for souls.</p>
+<!-- ================= AUTHOR SECTION ================= -->
+<section class="author-box">
+  <img src="images/author.jpg" alt="Prakash">
+  <h2>Prakash</h2>
+  <p>
+    Main kahani likhta hoon,  
+    kyunki kuch jazbaat sirf likhe ja sakte hain…  
+    bole nahi ja sakte.
+  </p>
 </section>
 
-<nav class="menu">
-  <a href="index.html">Home</a>
-  <a href="novels/novel1.html">Stories</a>
-  <a href="#">Letters</a>
-  <a href="#">Yaade</a>
-  <a href="#">About</a>
-  <a href="#">Contact</a>
-</nav>
+<!-- ================= BIG NAV BUTTONS ================= -->
+<section class="big-nav">
+  <a href="#novels" class="big-btn">📚 Read Novels</a>
+  <a href="#" class="big-btn">✉ Letters</a>
+  <a href="#" class="big-btn">🕯 Yaade</a>
+  <a href="#" class="big-btn">👤 About Author</a>
+</section>
 
-<section class="novels">
-  <div class="card">
-    <img src="images/novel1.jpg">
-    <h3>Novel One</h3>
-    <p>Ek kahani jo dil ke kone tak jaati hai…</p>
-    <a href="novels/novel1.html" class="btn">Read</a>
+<!-- ================= FEATURED NOVELS ================= -->
+<section id="novels" class="novel-section">
+  <h2 class="section-title">Featured Novels</h2>
+
+  <div class="novel-grid">
+
+    <div class="novel-card">
+      <img src="images/novel1.jpg">
+      <h3>Novel One</h3>
+      <p>
+        Ek kahani jo yaadon,  
+        pyaar aur khamoshi ke beech jeeti hai…
+      </p>
+      <a href="novels/novel1.html" class="read-btn">📖 Read Novel</a>
+    </div>
+
+    <div class="novel-card">
+      <img src="images/novel2.jpg">
+      <h3>Novel Two</h3>
+      <p>
+        Jab rishton ka bojh  
+        lafzon se zyada bhaari ho jaata hai…
+      </p>
+      <a href="novels/novel2.html" class="read-btn">📖 Read Novel</a>
+    </div>
+
+    <div class="novel-card">
+      <img src="images/novel3.jpg">
+      <h3>Novel Three</h3>
+      <p>
+        Kuch kahaniyan adhuri rehkar  
+        hi poori hoti hain…
+      </p>
+      <a href="novels/novel3.html" class="read-btn">📖 Read Novel</a>
+    </div>
+
   </div>
-
-  <!-- Isi card ko copy karke 5 novels bana -->
 </section>
 
-<section class="donate">
-  <img src="images/qr.png">
-  <p>Support my writing ❤️</p>
+<!-- ================= DONATE SECTION ================= -->
+<section class="donate-box">
+  <h2>❤️ Support My Writing</h2>
+  <p>
+    Agar meri kahaniyon ne  
+    aapke dil ko chhua ho…
+  </p>
+
+  <div class="upi-box">
+    <p><strong>UPI ID:</strong></p>
+    <p class="upi-id">prakash.gudade@ybl</p>
+    <img src="images/qr.png" alt="UPI QR">
+  </div>
 </section>
 
-<footer>
-  © 2026 Prakash Gudade
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <p>© 2026 Prakash Gudade</p>
+  <p>Written with emotions, not algorithms.</p>
 </footer>
 
 <script src="script.js"></script>
