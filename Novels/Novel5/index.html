@@ -1,1 +1,179 @@
+<!-- NOVEL 5 : LANDING PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>टूटे ख़्वाब</title>
 
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="../style.css">
+
+  <style>
+    body{
+      margin:0;
+      font-family:'Poppins',sans-serif;
+      background:linear-gradient(180deg,#0f0f0f,#1b1b1b,#2b2b2b);
+      color:#ffffff;
+    }
+    .novel-wrap{
+      max-width:900px;
+      margin:auto;
+      padding:30px 20px;
+    }
+    .cover{
+      height:260px;
+      border-radius:20px;
+      background:linear-gradient(135deg,#f12711,#f5af19);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-family:'Playfair Display',serif;
+      font-size:30px;
+      margin-bottom:25px;
+    }
+    h1{
+      font-family:'Playfair Display',serif;
+      font-size:38px;
+      margin:10px 0;
+    }
+    .author{
+      color:#ffd369;
+      margin-bottom:20px;
+    }
+    .synopsis{
+      background:rgba(0,0,0,0.4);
+      padding:22px;
+      border-radius:16px;
+      line-height:1.8;
+      margin-bottom:30px;
+    }
+    .progress-box{
+      margin-bottom:30px;
+      font-size:14px;
+    }
+    .progress{
+      height:10px;
+      background:#222;
+      border-radius:10px;
+      overflow:hidden;
+      margin-top:6px;
+    }
+    .progress span{
+      display:block;
+      height:100%;
+      width:6.66%; /* 15 chapters */
+      background:#f5af19;
+    }
+    .chapters{
+      margin-top:25px;
+    }
+    .chapter{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:18px 22px;
+      margin-bottom:14px;
+      border-radius:14px;
+      background:rgba(255,255,255,0.1);
+      color:#fff;
+      text-decoration:none;
+      font-size:18px;
+      transition:0.3s;
+    }
+    .chapter:hover{
+      background:rgba(245,175,25,0.3);
+    }
+    .donate{
+      text-align:center;
+      margin-top:40px;
+    }
+    .donate a{
+      display:inline-block;
+      padding:16px 44px;
+      border-radius:40px;
+      background:#f12711;
+      color:#fff;
+      text-decoration:none;
+      font-size:18px;
+      box-shadow:0 6px 20px rgba(0,0,0,0.4);
+    }
+    .footer-nav{
+      text-align:center;
+      margin-top:35px;
+    }
+    .footer-nav a{
+      display:inline-block;
+      padding:16px 44px;
+      border-radius:40px;
+      background:#1f1f1f;
+      color:#ffd369;
+      text-decoration:none;
+      font-size:18px;
+      transition:0.3s;
+    }
+    .footer-nav a:hover{
+      background:#f12711;
+      color:#fff;
+    }
+  </style>
+</head>
+
+<body>
+<div class="novel-wrap">
+
+  <!-- COVER -->
+  <div class="cover">टूटे ख़्वाब</div>
+
+  <!-- TITLE -->
+  <h1>टूटे ख़्वाब</h1>
+  <div class="author">by Prakash Gudade</div>
+
+  <!-- SYNOPSIS -->
+  <div class="synopsis">
+    हर टूटता ख़्वाब कुछ सिखा जाता है।  
+    यह कहानी है बिखरने के बाद संभलने की,  
+    और अंधेरे के बाद उजाले की।
+  </div>
+
+  <!-- PROGRESS -->
+  <div class="progress-box">
+    Reading Progress
+    <div class="progress"><span></span></div>
+    Chapter 1 of 15
+  </div>
+
+  <!-- CHAPTER LIST -->
+  <div class="chapters">
+    <a href="chapter1.html" class="chapter">Chapter 1 – सपनों की शुरुआत</a>
+    <a href="chapter2.html" class="chapter">Chapter 2 – पहली हार</a>
+    <a href="chapter3.html" class="chapter">Chapter 3 – टूटा भरोसा</a>
+    <a href="chapter4.html" class="chapter">Chapter 4 – खालीपन</a>
+    <a href="chapter5.html" class="chapter">Chapter 5 – अकेली रातें</a>
+    <a href="chapter6.html" class="chapter">Chapter 6 – खुद से सवाल</a>
+    <a href="chapter7.html" class="chapter">Chapter 7 – यादों का बोझ</a>
+    <a href="chapter8.html" class="chapter">Chapter 8 – टूटे ख़्वाब</a>
+    <a href="chapter9.html" class="chapter">Chapter 9 – नई सोच</a>
+    <a href="chapter10.html" class="chapter">Chapter 10 – उम्मीद</a>
+    <a href="chapter11.html" class="chapter">Chapter 11 – बदलता सफ़र</a>
+    <a href="chapter12.html" class="chapter">Chapter 12 – नया हौसला</a>
+    <a href="chapter13.html" class="chapter">Chapter 13 – सीख</a>
+    <a href="chapter14.html" class="chapter">Chapter 14 – आख़िरी इम्तिहान</a>
+    <a href="chapter15.html" class="chapter">Chapter 15 – नया सपना</a>
+  </div>
+
+  <!-- DONATE -->
+  <div class="donate">
+    <a href="#">❤️ Support via UPI</a>
+  </div>
+
+  <!-- BACK TO HOME -->
+  <div class="footer-nav">
+    <a href="../index.html">← Back to Home</a>
+  </div>
+
+</div>
+</body>
+</html>
