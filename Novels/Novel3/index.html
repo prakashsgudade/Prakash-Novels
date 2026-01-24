@@ -1,1 +1,201 @@
+<!-- NOVEL 3 : LANDING PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>छुपा इश्क़</title>
 
+  <!-- BEST GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="../style.css">
+
+  <style>
+    body{
+      background: linear-gradient(180deg,#0b0c10,#1f2833,#c5c6c7);
+      color:#fff;
+      font-family:'Poppins',sans-serif;
+      margin:0;
+    }
+
+    .novel-wrap{
+      max-width:900px;
+      margin:auto;
+      padding:30px 20px;
+    }
+
+    .cover{
+      width:100%;
+      height:260px;
+      background:linear-gradient(135deg,#ff4e50,#f9d423);
+      border-radius:20px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:28px;
+      font-family:'Playfair Display',serif;
+      margin-bottom:25px;
+    }
+
+    h1{
+      font-family:'Playfair Display',serif;
+      font-size:36px;
+      margin:10px 0;
+    }
+
+    .author{
+      color:#f6d365;
+      margin-bottom:15px;
+    }
+
+    .synopsis{
+      background:rgba(0,0,0,0.3);
+      padding:20px;
+      border-radius:15px;
+      line-height:1.7;
+      margin-bottom:30px;
+    }
+
+    .progress-box{
+      margin-bottom:30px;
+      font-size:14px;
+    }
+
+    .progress{
+      height:10px;
+      background:#333;
+      border-radius:10px;
+      overflow:hidden;
+      margin-top:6px;
+    }
+
+    .progress span{
+      display:block;
+      height:100%;
+      width:6.66%; /* 100/15 chapters */
+      background:#ffb703;
+    }
+
+    .chapters{
+      margin-top:20px;
+    }
+
+    .chapter{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:rgba(255,255,255,0.1);
+      padding:18px 20px;
+      border-radius:14px;
+      margin-bottom:15px;
+      text-decoration:none;
+      color:#fff;
+      font-size:18px;
+    }
+
+    .chapter:hover{
+      background:rgba(255,183,3,0.3);
+    }
+
+    .donate{
+      margin-top:40px;
+      text-align:center;
+    }
+
+    .donate a{
+      display:inline-block;
+      background:#ff4e50;
+      padding:16px 40px;
+      border-radius:40px;
+      color:#fff;
+      font-size:18px;
+      text-decoration:none;
+      margin:10px;
+    }
+
+    .footer-nav{
+      text-align:center;
+      margin-top:30px;
+    }
+
+    .footer-nav a{
+      display:inline-block;
+      padding:16px 40px;
+      background:#1f2833;
+      color:#f6d365;
+      font-size:18px;
+      border-radius:40px;
+      text-decoration:none;
+      margin:10px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.3);
+      transition:0.3s;
+    }
+
+    .footer-nav a:hover{
+      background:#ff4e50;
+      color:#fff;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="novel-wrap">
+
+  <!-- COVER -->
+  <div class="cover">छुपा इश्क़</div>
+
+  <!-- TITLE -->
+  <h1>छुपा इश्क़</h1>
+  <div class="author">by Prakash Gudade</div>
+
+  <!-- SYNOPSIS -->
+  <div class="synopsis">
+    कुछ इश्क़ हमेशा दिल में छुपा रह जाता है।  
+    यह कहानी है उन एहसासों की जो कभी कहे नहीं गए,  
+    और उन यादों की जो हमेशा साथ रहती हैं।
+  </div>
+
+  <!-- PROGRESS -->
+  <div class="progress-box">
+    Reading Progress
+    <div class="progress">
+      <span></span>
+    </div>
+    Chapter 1 of 15
+  </div>
+
+  <!-- CHAPTER LIST -->
+  <div class="chapters">
+    <a href="chapter1.html" class="chapter">Chapter 1 – पहली नज़र</a>
+    <a href="chapter2.html" class="chapter">Chapter 2 – छुपा दिल</a>
+    <a href="chapter3.html" class="chapter">Chapter 3 – यादें</a>
+    <a href="chapter4.html" class="chapter">Chapter 4 – पहली बात</a>
+    <a href="chapter5.html" class="chapter">Chapter 5 – अधूरी कहानी</a>
+    <a href="chapter6.html" class="chapter">Chapter 6 – टूटा वादा</a>
+    <a href="chapter7.html" class="chapter">Chapter 7 – खामोशी</a>
+    <a href="chapter8.html" class="chapter">Chapter 8 – दिल की पुकार</a>
+    <a href="chapter9.html" class="chapter">Chapter 9 – अधूरी यादें</a>
+    <a href="chapter10.html" class="chapter">Chapter 10 – इंतज़ार</a>
+    <a href="chapter11.html" class="chapter">Chapter 11 – दिल का इश्क़</a>
+    <a href="chapter12.html" class="chapter">Chapter 12 – तन्हाई</a>
+    <a href="chapter13.html" class="chapter">Chapter 13 – ख्वाब</a>
+    <a href="chapter14.html" class="chapter">Chapter 14 – अधूरी मोहब्बत</a>
+    <a href="chapter15.html" class="chapter">Chapter 15 – आख़िरी एहसास</a>
+  </div>
+
+  <!-- DONATE -->
+  <div class="donate">
+    <a href="#">❤️ Support via UPI</a>
+  </div>
+
+  <!-- BACK TO HOME -->
+  <div class="footer-nav">
+    <a href="../index.html">← Back to Home</a>
+  </div>
+
+</div>
+
+</body>
+  </html>
