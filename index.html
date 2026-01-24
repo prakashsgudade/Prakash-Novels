@@ -2,95 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Prakash’s Novels</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Prakash | Novelist</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ================= HEADER ================= -->
-<header class="top-header">
-  <h1>📖 Prakash’s Novels</h1>
-  <p class="tagline">Kahaniyan jo dil ke kone se likhi gayi hain</p>
-  <button class="dark-btn" onclick="toggleDark()">🌙 Dark Mode</button>
-</header>
+<!-- 🌙 Dark Mode Toggle -->
+<div class="dark-toggle" onclick="toggleDark()">🌙</div>
 
-<!-- ================= AUTHOR SECTION ================= -->
-<section class="author-box">
-  <img src="images/author.jpg" alt="Prakash">
-  <h2>Prakash</h2>
-  <p>
-    Main kahani likhta hoon,  
-    kyunki kuch jazbaat sirf likhe ja sakte hain…  
-    bole nahi ja sakte.
+<!-- ================= HERO SECTION ================= -->
+<section class="hero">
+  <img src="images/author.jpg" class="author-pic">
+  <h1>Prakash</h1>
+  <p class="hero-line">
+    I write stories for hearts that feel too much.
   </p>
+
+  <button class="main-btn" onclick="scrollToNovels()">
+    📖 Read My Novels
+  </button>
 </section>
 
-<!-- ================= BIG NAV BUTTONS ================= -->
-<section class="big-nav">
-  <a href="#novels" class="big-btn">📚 Read Novels</a>
-  <a href="#" class="big-btn">✉ Letters</a>
-  <a href="#" class="big-btn">🕯 Yaade</a>
-  <a href="#" class="big-btn">👤 About Author</a>
-</section>
+<!-- ================= NOVELS SECTION ================= -->
+<section id="novels" class="novels-section">
 
-<!-- ================= FEATURED NOVELS ================= -->
-<section id="novels" class="novel-section">
-  <h2 class="section-title">Featured Novels</h2>
+  <h2 class="section-title">My Novels</h2>
 
   <div class="novel-grid">
 
     <div class="novel-card">
-      <img src="images/novel1.jpg">
       <h3>Novel One</h3>
       <p>
-        Ek kahani jo yaadon,  
-        pyaar aur khamoshi ke beech jeeti hai…
+        Ek emotional kahani jo pyaar,
+        yaadon aur khamoshi ke beech jeeti hai.
       </p>
-      <a href="novels/novel1.html" class="read-btn">📖 Read Novel</a>
+      <button class="read-btn">Read</button>
     </div>
 
     <div class="novel-card">
-      <img src="images/novel2.jpg">
       <h3>Novel Two</h3>
       <p>
-        Jab rishton ka bojh  
-        lafzon se zyada bhaari ho jaata hai…
+        Jab rishton ke beech galatfahmi
+        sab kuch tod deti hai.
       </p>
-      <a href="novels/novel2.html" class="read-btn">📖 Read Novel</a>
+      <button class="read-btn">Read</button>
     </div>
 
     <div class="novel-card">
-      <img src="images/novel3.jpg">
       <h3>Novel Three</h3>
       <p>
-        Kuch kahaniyan adhuri rehkar  
-        hi poori hoti hain…
+        Adhuri mohabbat ki kahani
+        jo kabhi poori nahi hoti.
       </p>
-      <a href="novels/novel3.html" class="read-btn">📖 Read Novel</a>
+      <button class="read-btn">Read</button>
+    </div>
+
+    <div class="novel-card">
+      <h3>Novel Four</h3>
+      <p>
+        Ek safar jo shehar se zyada
+        dil ke andar hota hai.
+      </p>
+      <button class="read-btn">Read</button>
+    </div>
+
+    <div class="novel-card">
+      <h3>Novel Five</h3>
+      <p>
+        Jab yaadein zinda reh jaati hain
+        aur log chhoot jaate hain.
+      </p>
+      <button class="read-btn">Read</button>
     </div>
 
   </div>
 </section>
 
-<!-- ================= DONATE SECTION ================= -->
-<section class="donate-box">
-  <h2>❤️ Support My Writing</h2>
-  <p>
-    Agar meri kahaniyon ne  
-    aapke dil ko chhua ho…
-  </p>
+<!-- ================= SUPPORT SECTION ================= -->
+<section class="support">
+  <h2>Support My Writing ❤️</h2>
 
-  <div class="upi-box">
-    <p><strong>UPI ID:</strong></p>
-    <p class="upi-id">prakash.gudade@ybl</p>
-    <img src="images/qr.png" alt="UPI QR">
+  <button class="upi-btn">
+    UPI : prakash@upi
+  </button>
+
+  <img src="images/qr.png" class="qr">
+
+  <div class="social">
+    <a href="#">Instagram</a>
+    <a href="#">YouTube</a>
+    <a href="#">Twitter</a>
   </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-  <p>© 2026 Prakash Gudade</p>
-  <p>Written with emotions, not algorithms.</p>
+<!-- ================= FUTURE SPACE ================= -->
+<section class="future">
+  <h2>More Stories Coming Soon…</h2>
+  <p>
+    Yeh jagah future letters, poems,
+    ya special content ke liye rakhi gayi hai.
+  </p>
+</section>
+
+<footer>
+  © 2026 Prakash
 </footer>
 
 <script src="script.js"></script>
