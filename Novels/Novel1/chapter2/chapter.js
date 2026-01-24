@@ -1,49 +1,53 @@
-const content = document.getElementById("chapterContent");
-const progressBar = document.getElementById("progressBar");
+const body = document.body;
+const darkBtn = document.getElementById("darkToggle");
+const soundBtn = document.getElementById("soundToggle");
 const bookmarkBtn = document.getElementById("bookmarkBtn");
-const soundToggle = document.getElementById("soundToggle");
-const pageSound = document.getElementById("pageSound");
+const pageNum = document.getElementById("pageNum");
 
-// ===== PROGRESS BAR =====
-window.addEventListener("scroll", () => {
-  const scrollTop = window.scrollY;
-  const height = document.body.scrollHeight - window.innerHeight;
-  const progress = (scrollTop / height) * 100;
-  progressBar.style.width = progress + "%";
-});
+const flipSound = new Audio("page-flip.mp3");
 
-// ===== BOOKMARK (REAL – localStorage) =====
-bookmarkBtn.addEventListener("click", () => {
-  localStorage.setItem("chapter2Bookmark", window.scrollY);
-  alert("📌 Bookmark saved!");
-});
-
-// Load bookmark
-window.addEventListener("load", () => {
-  const saved = localStorage.getItem("chapter2Bookmark");
-  if (saved) {
-    window.scrollTo(0, saved);
-  }
-
-  // Sound setting
-  const soundState = localStorage.getItem("sound");
-  if (soundState === "off") {
-    soundToggle.innerText = "🔇 Sound OFF";
-  }
-});
-
-// ===== SOUND ON/OFF =====
-soundToggle.addEventListener("click", () => {
-  if (soundToggle.innerText.includes("ON")) {
-    soundToggle.innerText = "🔇 Sound OFF";
-    localStorage.setItem("sound", "off");
-  } else {
-    soundToggle.innerText = "🔊 Sound ON";
-    localStorage.setItem("sound", "on");
-  }
-});
-
-// Play page flip sound
-if (localStorage.getItem("sound") !== "off") {
-  pageSound.play().catch(() => {});
+/* DARK MODE */
+if (localStorage.getItem("darkMode") === "on") {
+  body.classList.add("dark");
 }
+
+darkBtn.onclick = () => {
+  body.classList.toggle("dark");
+  localStorage.setItem("darkMode",
+    body.classList.contains("dark") ? "on" : "off"
+  );
+};
+
+/* SOUND */
+let soundOn = localStorage.getItem("sound") !== "off";
+
+soundBtn.textContent = soundOn ? "🔊" : "🔇";
+
+soundBtn.onclick = () => {
+  soundOn = !soundOn;
+  localStorage.setItem("sound", soundOn ? "on" : "off");
+  soundBtn.textContent = soundOn ? "🔊" : "🔇";
+};
+
+/* PAGE COUNT */
+window.addEventListener("scroll", () => {
+  const pages = document.querySelectorAll(".page");
+  pages.forEach((page, index) => {
+    const rect = page.getBoundingClientRect();
+    if (rect.top <= 150 && rect.bottom >= 150) {
+      pageNum.textContent = index + 1;
+      if (soundOn) flipSound.play();
+    }
+  });
+});
+
+/* BOOKMARK */
+bookmarkBtn.onclick = () => {
+  localStorage.setItem("chapter2Bookmark", window.scrollY);
+  alert("Bookmark Saved ❤️");
+};
+
+window.onload = () => {
+  const saved = localStorage.getItem("chapter2Bookmark");
+  if (saved) window.scrollTo(0, saved);
+};
