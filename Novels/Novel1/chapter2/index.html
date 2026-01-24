@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
   <meta charset="UTF-8">
   <title>Chapter 2 – Baatein Badhne Lagi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="chapter.css">
 </head>
 <body>
@@ -10,51 +13,115 @@
 <!-- TOP BAR -->
 <div class="top-bar">
   <button id="darkToggle">🌙</button>
-  <button id="bookmarkBtn">🔖</button>
   <button id="soundToggle">🔊</button>
+  <button id="bookmarkBtn">🔖</button>
+</div>
+
+<!-- PAGE COUNTER -->
+<div class="page-indicator">
+  Page <span id="pageNum">1</span> / 7
 </div>
 
 <!-- CHAPTER -->
-<div class="chapter-container">
-  <h1>Chapter 2</h1>
-  <h2>“Baatein Badhne Lagi”</h2>
+<div class="chapter-container" id="content">
 
-  <div class="chapter-text" id="chapterText">
+  <h1>Chapter 2 – Baatein Badhne Lagi</h1>
 
-<p>Us din baat kuch alag si thi...</p>
-<p>Shuruat sirf ek hello se hui thi...</p>
-<p>Par us hello ke peeche jo curiosity thi...</p>
-<p>Har message ke saath intezaar badhne laga...</p>
-<p>Waqt ka pata hi nahi chala...</p>
-<p>Raat ke 2 baje bhi aankhein jagi thi...</p>
-<p>Baatein ab sirf baatein nahi rahi...</p>
-
-<p>Uski hasi screen ke paar mehsoos hoti thi...</p>
-<p>Kabhi ek line ka reply poori raat sochne par majboor kar deta...</p>
-<p>Phone silent par hota fir bhi dil awaaz sun leta...</p>
-
-<p>Yeh chapter sirf shabdon ka nahi tha...</p>
-<p>Yeh do dilon ke dheere dheere paas aane ka tha...</p>
-
-<p>Baatein badh rahi thi...</p>
-<p>Aur saath hi dar bhi...</p>
-<p>Kahin yeh sirf aadat na ban jaye...</p>
-
-<p>Par sach yahi tha...</p>
-<p>Ab baat na ho toh din adhoora lagta tha...</p>
-
+  <!-- PAGE 1 -->
+  <div class="page">
+    <p><strong>Page 1</strong></p>
+    <p>
+      Pehli mulaqat ke baad, dono ke beech ek ajeeb si khamoshi thi,
+      lekin us khamoshi me bhi baatein thi.
+      Raat ko mobile screen par chamakti notifications
+      ab aadat ban chuki thi.
+    </p>
   </div>
 
-  <!-- NAVIGATION -->
-  <div class="nav-buttons">
-    <a href="../chapter1/index.html" class="btn">⬅ Previous</a>
-    <a href="../index.html" class="btn">🏠 Home</a>
-    <a href="../chapter3/index.html" class="btn">Next ➡</a>
+  <!-- PAGE 2 -->
+  <div class="page">
+    <p><strong>Page 2</strong></p>
+    <p>
+      Good morning se shuru hone wali baat,
+      kab good night tak pahunch jaati,
+      pata hi nahi chalta.
+      Dono hansi, dono chup,
+      aur beech me sirf ehsaas.
+    </p>
   </div>
+
+  <!-- PAGE 3 -->
+  <div class="page">
+    <p><strong>Page 3</strong></p>
+    <p>
+      Har message ke peeche ek intezaar hota,
+      reply der se aaye toh dil bechain ho jaata.
+      Shayad yahi wo mod tha,
+      jahan baatein sirf baatein nahi rahi.
+    </p>
+  </div>
+
+  <!-- PAGE 4 -->
+  <div class="page">
+    <p><strong>Page 4</strong></p>
+    <p>
+      Kabhi purani yaadein,
+      kabhi bachpan ki baatein,
+      kabhi sapne jo kisi ko bataye nahi gaye.
+      Dono anjaane hote hue bhi,
+      ek dusre ke sabse kareeb the.
+    </p>
+  </div>
+
+  <!-- PAGE 5 -->
+  <div class="page">
+    <p><strong>Page 5</strong></p>
+    <p>
+      Har din baat badhne lagi,
+      aur har baat ke saath ek darr bhi —
+      kahin ye sab khatam na ho jaaye.
+      Dil dheere-dheere apni deewaar gira raha tha.
+    </p>
+  </div>
+
+  <!-- PAGE 6 -->
+  <div class="page">
+    <p><strong>Page 6</strong></p>
+    <p>
+      Raat ke sannate me,
+      sirf ek naam ghoomta rehta.
+      Aankhein band karte hi,
+      muskaan apne aap aa jaati.
+    </p>
+  </div>
+
+  <!-- PAGE 7 -->
+  <div class="page">
+    <p><strong>Page 7</strong></p>
+    <p>
+      Shayad dono samajh chuke the,
+      ki ye sirf baatein nahi rahi.
+      Ye kahani ab
+      dheere-dheere mohabbat ban rahi thi… ❤️
+    </p>
+  </div>
+
 </div>
 
-<audio id="flipSound" src="page-flip.mp3"></audio>
+<!-- NAVIGATION -->
+<div class="nav-buttons">
+  <a href="../chapter1/index.html">⬅ Previous</a>
+  <a href="../index.html">🏠 Home</a>
+  <a href="../chapter3/index.html">Next ➡</a>
+</div>
 
+<!-- DONATE -->
+<div class="donate">
+  <p>❤️ Kahani pasand aaye toh support kare</p>
+  <button>Donate</button>
+</div>
+
+<!-- JS -->
 <script src="chapter.js"></script>
 </body>
   </html>
