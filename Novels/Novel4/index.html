@@ -1,1 +1,197 @@
+<!-- NOVEL 4 : LANDING PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>खामोश रास्ते</title>
 
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="../style.css">
+
+  <style>
+    body{
+      margin:0;
+      font-family:'Poppins',sans-serif;
+      background:linear-gradient(180deg,#0f0c29,#302b63,#24243e);
+      color:#ffffff;
+    }
+
+    .novel-wrap{
+      max-width:900px;
+      margin:auto;
+      padding:30px 20px;
+    }
+
+    .cover{
+      height:260px;
+      border-radius:20px;
+      background:linear-gradient(135deg,#00c6ff,#0072ff);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-family:'Playfair Display',serif;
+      font-size:30px;
+      margin-bottom:25px;
+    }
+
+    h1{
+      font-family:'Playfair Display',serif;
+      font-size:38px;
+      margin:10px 0;
+    }
+
+    .author{
+      color:#ffd369;
+      margin-bottom:20px;
+    }
+
+    .synopsis{
+      background:rgba(0,0,0,0.35);
+      padding:22px;
+      border-radius:16px;
+      line-height:1.8;
+      margin-bottom:30px;
+    }
+
+    .progress-box{
+      margin-bottom:30px;
+      font-size:14px;
+    }
+
+    .progress{
+      height:10px;
+      background:#222;
+      border-radius:10px;
+      overflow:hidden;
+      margin-top:6px;
+    }
+
+    .progress span{
+      display:block;
+      height:100%;
+      width:6.66%; /* 15 chapters */
+      background:#00e0ff;
+    }
+
+    .chapters{
+      margin-top:25px;
+    }
+
+    .chapter{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:18px 22px;
+      margin-bottom:14px;
+      border-radius:14px;
+      background:rgba(255,255,255,0.1);
+      color:#fff;
+      text-decoration:none;
+      font-size:18px;
+      transition:0.3s;
+    }
+
+    .chapter:hover{
+      background:rgba(0,224,255,0.25);
+    }
+
+    .donate{
+      text-align:center;
+      margin-top:40px;
+    }
+
+    .donate a{
+      display:inline-block;
+      padding:16px 44px;
+      border-radius:40px;
+      background:#0072ff;
+      color:#fff;
+      text-decoration:none;
+      font-size:18px;
+      box-shadow:0 6px 20px rgba(0,0,0,0.4);
+    }
+
+    .footer-nav{
+      text-align:center;
+      margin-top:35px;
+    }
+
+    .footer-nav a{
+      display:inline-block;
+      padding:16px 44px;
+      border-radius:40px;
+      background:#1b1b3a;
+      color:#ffd369;
+      text-decoration:none;
+      font-size:18px;
+      transition:0.3s;
+    }
+
+    .footer-nav a:hover{
+      background:#0072ff;
+      color:#fff;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="novel-wrap">
+
+  <!-- COVER -->
+  <div class="cover">खामोश रास्ते</div>
+
+  <!-- TITLE -->
+  <h1>खामोश रास्ते</h1>
+  <div class="author">by Prakash Gudade</div>
+
+  <!-- SYNOPSIS -->
+  <div class="synopsis">
+    हर रास्ता आवाज़ नहीं करता,  
+    कुछ रास्ते खामोशी से ज़िंदगी बदल देते हैं।  
+    यह कहानी है उन सफ़रों की जहाँ इंसान खुद से मिला।
+  </div>
+
+  <!-- PROGRESS -->
+  <div class="progress-box">
+    Reading Progress
+    <div class="progress"><span></span></div>
+    Chapter 1 of 15
+  </div>
+
+  <!-- CHAPTER LIST -->
+  <div class="chapters">
+    <a href="chapter1.html" class="chapter">Chapter 1 – पहला मोड़</a>
+    <a href="chapter2.html" class="chapter">Chapter 2 – अनजाना सफ़र</a>
+    <a href="chapter3.html" class="chapter">Chapter 3 – खामोशी</a>
+    <a href="chapter4.html" class="chapter">Chapter 4 – टूटे कदम</a>
+    <a href="chapter5.html" class="chapter">Chapter 5 – धुंधले सच</a>
+    <a href="chapter6.html" class="chapter">Chapter 6 – अकेलापन</a>
+    <a href="chapter7.html" class="chapter">Chapter 7 – अंदर की आवाज़</a>
+    <a href="chapter8.html" class="chapter">Chapter 8 – बीता कल</a>
+    <a href="chapter9.html" class="chapter">Chapter 9 – ठहरा हुआ वक़्त</a>
+    <a href="chapter10.html" class="chapter">Chapter 10 – उम्मीद की किरण</a>
+    <a href="chapter11.html" class="chapter">Chapter 11 – नई राह</a>
+    <a href="chapter12.html" class="chapter">Chapter 12 – बदलता इंसान</a>
+    <a href="chapter13.html" class="chapter">Chapter 13 – खुद से सामना</a>
+    <a href="chapter14.html" class="chapter">Chapter 14 – आख़िरी मोड़</a>
+    <a href="chapter15.html" class="chapter">Chapter 15 – नया सवेरा</a>
+  </div>
+
+  <!-- DONATE -->
+  <div class="donate">
+    <a href="#">❤️ Support via UPI</a>
+  </div>
+
+  <!-- BACK TO HOME -->
+  <div class="footer-nav">
+    <a href="../index.html">← Back to Home</a>
+  </div>
+
+</div>
+
+</body>
+  </html>
