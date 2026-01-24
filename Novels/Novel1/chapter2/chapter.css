@@ -1,78 +1,84 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  padding: 0;
   font-family: Georgia, serif;
   background: #f8f5f1;
   color: #222;
-  line-height: 1.8;
+  line-height: 1.9;
 }
 
+/* DARK MODE */
 body.dark {
   background: #121212;
   color: #e0e0e0;
 }
 
-/* TOP BAR */
-.top-bar {
+/* TOP CONTROLS */
+.top-controls {
+  position: sticky;
+  top: 0;
   display: flex;
   gap: 10px;
   padding: 10px;
-  position: sticky;
-  top: 0;
   background: inherit;
+  z-index: 10;
 }
 
-.top-bar button {
+.top-controls button {
   font-size: 18px;
-  padding: 8px 12px;
+  padding: 6px 10px;
 }
 
-/* PAGE COUNTER */
+/* PAGE INDICATOR */
 .page-indicator {
   text-align: center;
-  margin: 10px;
   font-size: 14px;
+  margin: 10px 0;
 }
 
 /* CONTENT */
-.chapter-container {
-  padding: 20px;
-  max-width: 700px;
+.chapter-wrapper {
+  max-width: 720px;
   margin: auto;
+  padding: 20px;
 }
 
-.chapter-container h1 {
+.chapter-wrapper h1 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 /* PAGE FEEL */
 .page {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
-/* NAV BUTTONS */
-.nav-buttons {
+/* NAVIGATION */
+.navigation {
   display: flex;
   justify-content: space-around;
   padding: 20px;
 }
 
-.nav-buttons a {
+.nav-btn {
   text-decoration: none;
-  padding: 12px 20px;
   background: #000;
   color: #fff;
-  border-radius: 8px;
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-size: 16px;
 }
 
 /* DONATE */
-.donate {
+.donate-box {
   text-align: center;
   padding: 30px;
 }
 
-.donate button {
-  padding: 12px 30px;
+.donate-box button {
+  padding: 14px 30px;
   font-size: 16px;
 }
