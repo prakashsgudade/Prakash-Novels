@@ -1,31 +1,49 @@
-const pages = document.querySelectorAll(".page");
-const counter = document.getElementById("pageCounter");
-const sound = document.getElementById("flipSound");
+const content = document.getElementById("chapterContent");
+const progressBar = document.getElementById("progressBar");
+const bookmarkBtn = document.getElementById("bookmarkBtn");
+const soundToggle = document.getElementById("soundToggle");
+const pageSound = document.getElementById("pageSound");
 
+// ===== PROGRESS BAR =====
 window.addEventListener("scroll", () => {
-  let current = 1;
-
-  pages.forEach((page, i) => {
-    if (page.getBoundingClientRect().top < window.innerHeight / 2) {
-      current = i + 1;
-    }
-  });
-
-  counter.innerText = "Page " + current;
+  const scrollTop = window.scrollY;
+  const height = document.body.scrollHeight - window.innerHeight;
+  const progress = (scrollTop / height) * 100;
+  progressBar.style.width = progress + "%";
 });
 
-/* DARK MODE */
-function toggleDark() {
-  document.body.classList.toggle("dark");
-}
-
-/* BOOKMARK */
-function toggleBookmark() {
-  alert("🔖 Bookmark saved! (Future update me real save hoga)");
-}
-
-/* PAGE FLIP SOUND */
-window.addEventListener("scroll", () => {
-  sound.currentTime = 0;
-  sound.play();
+// ===== BOOKMARK (REAL – localStorage) =====
+bookmarkBtn.addEventListener("click", () => {
+  localStorage.setItem("chapter2Bookmark", window.scrollY);
+  alert("📌 Bookmark saved!");
 });
+
+// Load bookmark
+window.addEventListener("load", () => {
+  const saved = localStorage.getItem("chapter2Bookmark");
+  if (saved) {
+    window.scrollTo(0, saved);
+  }
+
+  // Sound setting
+  const soundState = localStorage.getItem("sound");
+  if (soundState === "off") {
+    soundToggle.innerText = "🔇 Sound OFF";
+  }
+});
+
+// ===== SOUND ON/OFF =====
+soundToggle.addEventListener("click", () => {
+  if (soundToggle.innerText.includes("ON")) {
+    soundToggle.innerText = "🔇 Sound OFF";
+    localStorage.setItem("sound", "off");
+  } else {
+    soundToggle.innerText = "🔊 Sound ON";
+    localStorage.setItem("sound", "on");
+  }
+});
+
+// Play page flip sound
+if (localStorage.getItem("sound") !== "off") {
+  pageSound.play().catch(() => {});
+}
