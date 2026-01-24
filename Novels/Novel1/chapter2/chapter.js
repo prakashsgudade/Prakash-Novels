@@ -1,14 +1,33 @@
-const pages = document.querySelectorAll(".page");
-const counter = document.getElementById("pageCounter");
+// DARK MODE
+const darkBtn = document.getElementById("darkToggle");
+darkBtn.onclick = () => {
+  document.body.classList.toggle("dark");
+};
 
-window.addEventListener("scroll", () => {
-  let current = 1;
+// BOOKMARK (REAL)
+const bookmarkBtn = document.getElementById("bookmarkBtn");
+bookmarkBtn.onclick = () => {
+  localStorage.setItem("chapter2Scroll", window.scrollY);
+  alert("🔖 Bookmark Saved");
+};
 
-  pages.forEach((page, i) => {
-    if (page.getBoundingClientRect().top < window.innerHeight / 2) {
-      current = i + 1;
-    }
-  });
+window.onload = () => {
+  const saved = localStorage.getItem("chapter2Scroll");
+  if (saved) {
+    window.scrollTo(0, saved);
+  }
+};
 
-  counter.innerText = "Page " + current;
+// SOUND ON/OFF
+const soundBtn = document.getElementById("soundToggle");
+const sound = document.getElementById("flipSound");
+let soundOn = true;
+
+soundBtn.onclick = () => {
+  soundOn = !soundOn;
+  soundBtn.textContent = soundOn ? "🔊" : "🔇";
+};
+
+document.addEventListener("click", () => {
+  if (soundOn) sound.play();
 });
