@@ -274,3 +274,123 @@ body.dark .chapter-btn {
   background: #fff;
   color: #000;
 }
+/* ===== NOVEL LANDING PAGE ===== */
+.novel-page {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(180deg, #1b0f0a, #120805);
+  border-radius: 22px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  transition: all 0.3s ease;
+}
+
+body.light .novel-page {
+  background: #fff7ee;
+  color: #2b1b10;
+}
+
+/* COVER */
+.novel-cover {
+  width: 180px;
+  border-radius: 14px;
+  display: block;
+  margin: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* TITLE */
+.novel-page h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+
+.author {
+  text-align: center;
+  color: #d4af37;
+  font-size: 14px;
+}
+
+/* STORY */
+.synopsis {
+  margin: 25px 0;
+  text-align: center;
+  font-style: italic;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+/* TOGGLE */
+.toggle {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: #b85c1e;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* PROGRESS */
+.progress-box {
+  margin: 30px 0;
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 8px;
+  width: 0%;
+  background: linear-gradient(90deg, #e67e22, #ffd194);
+}
+
+.progress-text {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+/* CHAPTERS */
+.chapter-heading {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.chapter-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.chapter-btn {
+  padding: 16px;
+  background: linear-gradient(145deg, #b85c1e, #e67e22);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 18px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.chapter-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* DONATE */
+.donate-btn {
+  display: block;
+  margin: 40px auto 10px;
+  padding: 16px 40px;
+  background: linear-gradient(145deg, #8e2de2, #4a00e0);
+  color: #fff;
+  border-radius: 35px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  }
