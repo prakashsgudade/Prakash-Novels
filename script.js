@@ -30,3 +30,23 @@ body.dark .font-controls button {
   background: #fff;
   color: #000;
     }
+let currentFontSize = 18; // default font size
+
+function increaseFont() {
+  if (currentFontSize < 24) {
+    currentFontSize += 2;
+    document.body.style.fontSize = currentFontSize + "px";
+  }
+}
+
+function decreaseFont() {
+  if (currentFontSize > 14) {
+    currentFontSize -= 2;
+    document.body.style.fontSize = currentFontSize + "px";
+  }
+}
+
+function resetFont() {
+  currentFontSize = 18;
+  document.body.style.fontSize = "18px";
+}
