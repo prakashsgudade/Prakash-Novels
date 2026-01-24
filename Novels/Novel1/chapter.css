@@ -1,0 +1,85 @@
+/* BASIC RESET */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #f5f0e1;
+  color: #222;
+}
+
+/* CHAPTER BOX */
+.chapter-box {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 40px 25px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* TITLES */
+.book-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.chapter-title {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: #5a2ca0;
+}
+
+/* STORY TEXT */
+.chapter-box p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* NAV BUTTONS */
+.btn-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.btn {
+  padding: 14px 22px;
+  background: #5a2ca0;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 12px;
+}
+
+.btn:hover {
+  background: #7b2ff7;
+}
+
+/* DONATE */
+.donate {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.donate a {
+  display: inline-block;
+  padding: 14px 25px;
+  background: linear-gradient(135deg, #7b2ff7, #f107a3);
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 14px;
+}
+
+/* DARK MODE (optional later) */
+body.dark {
+  background: #111;
+  color: #ddd;
+}
+
+body.dark .chapter-box {
+  background: #222;
+  }
