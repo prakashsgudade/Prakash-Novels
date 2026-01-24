@@ -1,69 +1,78 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   padding: 0;
-  background: #0e0e0e;
-  color: #eee;
-  font-family: 'Georgia', serif;
-  overflow-x: hidden;
+  font-family: Georgia, serif;
+  background: #f8f5f1;
+  color: #222;
+  line-height: 1.8;
 }
 
+body.dark {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+/* TOP BAR */
 .top-bar {
   display: flex;
   gap: 10px;
   padding: 10px;
-  justify-content: center;
+  position: sticky;
+  top: 0;
+  background: inherit;
 }
 
 .top-bar button {
+  font-size: 18px;
   padding: 8px 12px;
-  font-size: 18px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
 }
 
-.chapter-container {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
-  width: 100%;
-}
-
-h1, h2 {
+/* PAGE COUNTER */
+.page-indicator {
   text-align: center;
+  margin: 10px;
+  font-size: 14px;
 }
 
-.chapter-text {
-  font-size: 18px;
-  line-height: 1.8;
+/* CONTENT */
+.chapter-container {
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
 }
 
-.chapter-text p {
-  margin-bottom: 24px;
+.chapter-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
+/* PAGE FEEL */
+.page {
+  margin-bottom: 60px;
+}
+
+/* NAV BUTTONS */
 .nav-buttons {
   display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin-top: 40px;
+  justify-content: space-around;
+  padding: 20px;
 }
 
-.btn {
-  padding: 12px 20px;
-  background: #222;
-  color: #fff;
-  border-radius: 10px;
+.nav-buttons a {
   text-decoration: none;
+  padding: 12px 20px;
+  background: #000;
+  color: #fff;
+  border-radius: 8px;
 }
 
-/* DARK MODE */
-.dark {
-  background: #f4f4f4;
-  color: #111;
-  }
+/* DONATE */
+.donate {
+  text-align: center;
+  padding: 30px;
+}
+
+.donate button {
+  padding: 12px 30px;
+  font-size: 16px;
+}
