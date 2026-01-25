@@ -1,117 +1,83 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: Georgia, serif;
-  background: #fdfaf6;
-  color: #2c2c2c;
+  background: #fafafa;
+  color: #222;
   line-height: 1.9;
-  transition: 0.3s;
+  padding: 20px;
 }
 
 .dark {
-  background: #121212;
-  color: #eaeaea;
+  background: #111;
+  color: #eee;
 }
 
-/* TOP BAR */
-.top-bar {
-  position: sticky;
-  top: 0;
-  background: #fff;
-  padding: 10px;
+.top-nav {
   display: flex;
-  gap: 10px;
-  justify-content: center;
-  z-index: 10;
+  gap: 15px;
+  margin-bottom: 15px;
 }
 
-.dark .top-bar {
-  background: #1c1c1c;
-}
-
-.top-bar button {
-  padding: 10px 18px;
-  border-radius: 25px;
-  border: none;
+.top-nav a, .top-nav button {
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 20px;
   background: #222;
   color: #fff;
-  cursor: pointer;
+  border: none;
 }
 
-/* PAGE COUNT */
-.page-count {
-  text-align: center;
-  margin: 15px;
+.page-indicator {
   font-size: 14px;
-  opacity: 0.8;
+  opacity: 0.7;
+  margin-bottom: 20px;
 }
 
-/* STORY */
-.story {
-  max-width: 720px;
-  margin: auto;
-  padding: 30px 20px;
-}
-
-.story h1 {
+h1 {
   text-align: center;
-  font-size: 34px;
-  margin-bottom: 5px;
+  font-size: 32px;
 }
 
-.story h2 {
+h2 {
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   opacity: 0.7;
   margin-bottom: 40px;
 }
 
+.story {
+  max-width: 720px;
+  margin: auto;
+}
+
 .page {
-  margin-bottom: 120px; /* PAGE FEEL */
   font-size: 19px;
+  margin-bottom: 120px; /* page feel */
 }
 
-/* DONATE */
-.donate-box {
+.donate {
   text-align: center;
-  padding: 25px;
-  background: #fff0e5;
-  margin: 30px;
-  border-radius: 20px;
+  margin: 40px 0;
 }
 
-.dark .donate-box {
-  background: #1f1f1f;
-}
-
-.donate-box button {
-  margin-top: 10px;
-  padding: 12px 30px;
-  font-size: 16px;
-  border-radius: 30px;
+.donate button {
+  padding: 10px 25px;
+  border-radius: 25px;
   border: none;
-  background: #ff4d4d;
+  background: crimson;
   color: white;
-  cursor: pointer;
 }
 
-/* BOTTOM NAV */
-.bottom-nav {
+.bottom-links {
   display: flex;
   justify-content: center;
   gap: 15px;
   margin: 40px 0;
 }
 
-.big-btn {
-  padding: 15px 25px;
-  background: #111;
+.bottom-links a {
+  padding: 10px 20px;
+  background: #222;
   color: white;
   text-decoration: none;
-  border-radius: 35px;
-  font-size: 16px;
-}
+  border-radius: 25px;
+  }
