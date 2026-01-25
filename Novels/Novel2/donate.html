@@ -5,16 +5,44 @@
   <style>
     body {
       font-family: sans-serif;
+      background: #fff6f6;
       text-align: center;
       padding: 30px;
     }
+
+    h2 {
+      color: #ff3d3d;
+    }
+
     img {
       width: 220px;
       margin: 20px 0;
-      border-radius: 12px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
-    .upi {
+
+    .donate-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 16px 30px;
       font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 50px;
+      background: linear-gradient(135deg, #36d1dc, #5b86e5);
+      box-shadow: 0 8px 20px rgba(91, 134, 229, 0.5);
+      transition: 0.3s;
+    }
+
+    .donate-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 25px rgba(91, 134, 229, 0.7);
+    }
+
+    .upi {
+      margin-top: 15px;
+      font-size: 17px;
       font-weight: bold;
     }
   </style>
@@ -22,14 +50,18 @@
 <body>
 
   <h2>❤️ Support the Author</h2>
-  <p>Agar story pasand aayi ho to support karein</p>
+  <p>Agar kahani ne dil chhua ho, to support karein</p>
 
   <!-- QR IMAGE -->
-  <img src="upi-qr.png.png" alt="UPI QR Code">
+  <img src="upi-qr.png" alt="UPI QR Code">
+
+  <!-- OPTIONAL DIRECT BUTTON -->
+  <a class="donate-btn">
+   🙏 Thank You for Supporting
+  </a>
 
   <p class="upi">UPI ID: prakash.gudade@ybl</p>
-
-  <p>PhonePe / Google Pay / Paytm se scan kare</p>
+  <p>PhonePe / Google Pay / Paytm se QR scan kare</p>
 
 </body>
 </html>
