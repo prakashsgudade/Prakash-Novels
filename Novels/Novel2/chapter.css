@@ -111,3 +111,24 @@ body.dark {
   height: auto;
   border-radius: 12px;
 }
+/* SUPPORT AUTHOR BUTTON */
+.support-btn {
+  display: block;
+  margin: 40px auto;
+  padding: 16px 26px;
+  max-width: 260px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  box-shadow: 0 8px 20px rgba(255, 75, 43, 0.4);
+  transition: 0.3s;
+}
+
+.support-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(255, 75, 43, 0.6);
+    }
