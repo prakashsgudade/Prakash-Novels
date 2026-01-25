@@ -2,66 +2,103 @@
 <html>
 <head>
   <title>Support the Author</title>
+
   <style>
     body {
+      margin: 0;
       font-family: sans-serif;
-      background: #fff6f6;
+      background: #121212;
+      color: #f1f1f1;
       text-align: center;
       padding: 30px;
     }
 
     h2 {
-      color: #ff3d3d;
+      color: #ff5c8a;
     }
 
     img {
       width: 220px;
-      margin: 20px 0;
+      margin: 25px 0;
       border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.6);
     }
 
-    .donate-btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 16px 30px;
+    .btn {
+      display: block;
+      max-width: 260px;
+      margin: 14px auto;
+      padding: 16px;
       font-size: 18px;
       font-weight: bold;
       color: #fff;
       text-decoration: none;
       border-radius: 50px;
-      background: linear-gradient(135deg, #36d1dc, #5b86e5);
-      box-shadow: 0 8px 20px rgba(91, 134, 229, 0.5);
       transition: 0.3s;
     }
 
-    .donate-btn:hover {
+    .btn49 {
+      background: linear-gradient(135deg, #00c853, #64dd17);
+    }
+
+    .btn99 {
+      background: linear-gradient(135deg, #2979ff, #00b0ff);
+    }
+
+    .btn149 {
+      background: linear-gradient(135deg, #ff6f00, #ff8f00);
+    }
+
+    .btn:hover {
       transform: scale(1.05);
-      box-shadow: 0 12px 25px rgba(91, 134, 229, 0.7);
+    }
+
+    .note {
+      font-size: 14px;
+      color: #bbb;
+      margin-top: 10px;
     }
 
     .upi {
-      margin-top: 15px;
-      font-size: 17px;
       font-weight: bold;
+      margin-top: 10px;
     }
   </style>
 </head>
+
 <body>
 
   <h2>❤️ Support the Author</h2>
-  <p>Agar kahani ne dil chhua ho, to support karein</p>
+  <p>Agar kahani pasand aayi ho to support karein</p>
 
-  <!-- QR IMAGE -->
-  <img src="upi-qr.png.png" alt="UPI QR Code">
-
-  <!-- OPTIONAL DIRECT BUTTON -->
-  <a class="donate-btn">
-   🙏 Thank You for Supporting
+  <!-- DIRECT PAYMENT BUTTONS -->
+  <a class="btn btn49"
+     href="upi://pay?pa=yourupi@bank&pn=Author&am=49&cu=INR"
+     target="_blank">
+     💰 Donate ₹49
   </a>
 
-  <p class="upi">UPI ID: prakash.gudade@ybl</p>
-  <p>PhonePe / Google Pay / Paytm se QR scan kare</p>
+  <a class="btn btn99"
+     href="upi://pay?pa=yourupi@bank&pn=Author&am=99&cu=INR"
+     target="_blank">
+     💰 Donate ₹99
+  </a>
+
+  <a class="btn btn149"
+     href="upi://pay?pa=yourupi@bank&pn=Author&am=149&cu=INR"
+     target="_blank">
+     💰 Donate ₹149
+  </a>
+
+  <p class="note">
+    (Agar buttons open na ho, niche QR scan kare)
+  </p>
+
+  <!-- QR BACKUP -->
+  <img src="upi-qr.png" alt="UPI QR Code">
+
+  <p class="upi">UPI ID: yourupi@bank</p>
+  <p>PhonePe / Google Pay / Paytm</p>
 
 </body>
 </html>
