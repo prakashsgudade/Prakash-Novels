@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ankahi Dastan – Chapter 11 | Tanhai</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SAME CSS FOR ALL CHAPTERS -->
+  <link rel="stylesheet" href="../chapter.css">
+</head>
+<body>
+
+<!-- DARK MODE -->
+<button class="dark-toggle" onclick="toggleDark()">🌙</button>
+
+<!-- PAGE COUNTER -->
+<div class="page-counter" id="pageCounter">Page 1</div>
+
+<div class="chapter-container">
+
+  <h1 class="chapter-title">Ankahi Dastan</h1>
+  <h2 class="chapter-subtitle">Chapter 11 – Tanhai</h2>
+
+  <!-- PAGE 1 -->
+  <div class="page">
+    <p><b>Tanhai.</b></p>
+    <p>
+      Kabhi jisse darr lagta tha,
+    </p>
+    <p>
+      aaj wahi tanhai  
+      sabse zyada apni lag rahi thi.
+    </p>
+  </div>
+
+  <!-- PAGE 2 -->
+  <div class="page">
+    <p>
+      Kamra wahi tha,  
+      deewarein wahi,
+    </p>
+    <p>
+      par andar kuch badal chuka tha.
+    </p>
+    <p>
+      Ab khamoshi chubhti nahi thi,
+      sunai deti thi.
+    </p>
+  </div>
+
+  <!-- PAGE 3 -->
+  <div class="page">
+    <p>
+      Maine seekh liya tha  
+      akela rehna,
+    </p>
+    <p>
+      bina shikayat ke,
+      bina sawaal ke.
+    </p>
+    <p>
+      Shayad yahi woh pal tha  
+      jab main khud ka saath  
+      dena seekh raha tha.
+    </p>
+  </div>
+
+  <!-- PAGE 4 -->
+  <div class="page">
+    <p>
+      Uski kami ab bhi thi,
+    </p>
+    <p>
+      par woh kami  
+      meri saans nahi rokti thi.
+    </p>
+    <p>
+      Kuch rishte yaadon me hi  
+      theek lagte hain.
+    </p>
+  </div>
+
+  <!-- PAGE 5 -->
+  <div class="page">
+    <p>
+      Raat ki khamoshi me  
+      khud se baatein hui,
+    </p>
+    <p>
+      aur pehli baar  
+      jawab bhi mile.
+    </p>
+    <p>
+      Shayad tanhai ka matlab  
+      akela hona nahi,
+      khud se milna hota hai.
+    </p>
+  </div>
+
+  <!-- PAGE 6 -->
+  <div class="page">
+    <p>
+      Main ab kisi ka intezaar  
+      nahi karta tha,
+    </p>
+    <p>
+      na kisi ke laut aane ki  
+      umeed rakhta tha.
+    </p>
+    <p>
+      Zindagi jaise keh rahi thi —  
+      ab tum tayaar ho.
+    </p>
+  </div>
+
+  <!-- PAGE 7 -->
+  <div class="page">
+    <p>
+      Tanhai ne mujhe toda nahi,
+    </p>
+    <p>
+      mujhe bana diya.
+    </p>
+    <p>
+      Aur shayad isi ke baad  
+      kahani apna  
+      aakhri mod leti hai.
+    </p>
+  </div>
+
+  <!-- NAVIGATION -->
+  <div class="nav-buttons">
+    <a href="../chapter10/index.html" class="nav-btn">⬅️ Previous Chapter</a>
+    <a href="../../index.html" class="nav-btn">🏠 Novel Home</a>
+    <a href="../chapter12/index.html" class="nav-btn">Next Chapter ➡️</a>
+  </div>
+
+</div>
+
+<!-- DONATE -->
+<div class="donate-footer">
+  ❤️ Agar yeh tanhai samajh aayi ho  
+  <br><br>
+
+  <a 
+    href="upi://pay?pa=prakash.gudade@ybl&pn=Prakash%20Gudade"
+    class="donate-btn">
+    Support via PhonePe
+  </a>
+
+  <p style="margin-top:12px; font-size:14px; opacity:0.8;">
+    UPI ID: <b>prakash.gudade@ybl</b>
+  </p>
+</div>
+
+<!-- SAME JS FOR ALL CHAPTERS -->
+<script src="../chapter.js"></script>
+
+</body>
+</html>
