@@ -60,10 +60,9 @@ body {
   margin-bottom: 40px;
 }
 
-/* PAGE */
 .page {
-  font-size: 19px;
-  margin-bottom: 120px; /* PAGE FEEL */
+  font-size: 21px;   /* thoda bada, readable */
+  margin-bottom: 140px; /* page feel strong */
 }
 
 /* DONATE */
