@@ -1,70 +1,111 @@
-<h1 class="chapter-title">Chapter 11 – Tanhai</h1>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ankahi Dastan – Chapter 11 | Tanhai</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../chapter.css">
+</head>
+<body>
 
-<div class="page">
-  <p>
-    Tanhai koi khaali jagah nahi hoti,  
-    balki woh jagah hoti hai jahan yaadein bolti hain.
-  </p>
-</div>
+<button class="dark-toggle" onclick="toggleDark()">🌙</button>
 
-<div class="page">
-  <p>
-    Woh bheed mein bhi akela tha.  
-    Log hans rahe the, baatein chal rahi thi,  
-    par uske andar ek khamoshi thi jo shor se bhi tez thi.
-  </p>
-</div>
+<div class="page-counter" id="pageCounter">Page 1</div>
 
-<div class="page">
-  <p>
-    Usne kai baar socha tha,  
-    shayad waqt ke saath sab theek ho jayega.
-    Par tanhai ne use sikhaya —
-    kuch cheezein theek nahi hoti,  
-    bas aadat ban jaati hain.
-  </p>
-</div>
+<div class="chapter-container">
 
-<div class="page">
-  <p>
-    Raat ko jab sab so jaate,  
-    tab uski tanhai jaag jaati.
-    Har yaad, har baat,
-    bina ijazat uske paas aa jaati.
-  </p>
-</div>
+  <h1 class="chapter-title">Ankahi Dastan</h1>
+  <h2 class="chapter-subtitle">Chapter 11 – Tanhai</h2>
 
-<div class="page">
-  <p>
-    Kabhi-kabhi woh khud se poochta —
-    “Galti meri thi ya kismat ki?”
-    Par jawaab kabhi mila hi nahi.
-  </p>
-</div>
-
-<div class="page">
-  <p>
-    Tanhai ne use todha nahi,
-    bas thoda chup kar diya.
-    Ab woh kam bolta hai,
-    par zyada mehsoos karta hai.
-  </p>
-</div>
-
-<div class="page">
-  <p>
-    Shayad tanhai bhi zaroori hoti hai,
-    taaki insaan apne aap se mil sake.
-  </p>
-
-  <a href="../index.html" class="big-btn">⬅️ Novel Home</a>
-
-  <div class="donate-box">
-    <p>❤️ Kahani pasand aaye to support karein</p>
-    <a href="upi://pay?pa=prakash.gudade@ybl" class="donate-btn">
-      Donate via PhonePe
-    </a>
+  <div class="page">
+    <p><b>Tanhai.</b></p>
+    <p>
+      Yeh sirf akela hona nahi hota,
+      balki woh pal hota hai  
+      jab dil khud se baat karta hai.
+    </p>
   </div>
+
+  <div class="page">
+    <p>
+      Log paas the,
+      par baatein door thi.
+    </p>
+    <p>
+      Aur main bheed ke beech  
+      khud ko dhoondhta reh gaya.
+    </p>
+  </div>
+
+  <div class="page">
+    <p>
+      Raat ko khamoshi zyada bolti thi,
+    </p>
+    <p>
+      har yaad ek sawaal ban kar
+      saamne aa jaati thi.
+    </p>
+  </div>
+
+  <div class="page">
+    <p>
+      Kabhi uska naam soch kar
+      muskurahat aa jaati,
+    </p>
+    <p>
+      aur agle hi pal  
+      aankhen bheeg jaati.
+    </p>
+  </div>
+
+  <div class="page">
+    <p>
+      Tanhai ne mujhe kamzor nahi banaya,
+    </p>
+    <p>
+      bas thoda gehra kar diya.
+    </p>
+  </div>
+
+  <div class="page">
+    <p>
+      Ab main kam bolta hoon,
+    </p>
+    <p>
+      par jo mehsoos karta hoon  
+      woh zyada sach hota hai.
+    </p>
+  </div>
+
+  <div class="page">
+    <p>
+      Shayad tanhai bhi ek kitaab hai,
+    </p>
+    <p>
+      jo sirf wohi padh sakta hai  
+      jo toota ho.
+    </p>
+  </div>
+
+  <div class="nav-buttons">
+    <a href="../chapter10/index.html" class="nav-btn">⬅️ Previous Chapter</a>
+    <a href="../../index.html" class="nav-btn">🏠 Novel Home</a>
+    <a href="../chapter12/index.html" class="nav-btn">Next Chapter ➡️</a>
+  </div>
+
 </div>
 
-<div id="pageCounter">Page 1</div>
+<div class="donate-footer">
+  ❤️ Agar yeh tanhai apni si lagi ho  
+  <br><br>
+  <a href="upi://pay?pa=prakash.gudade@ybl&pn=Prakash%20Gudade" class="donate-btn">
+    Support via PhonePe
+  </a>
+  <p style="margin-top:12px; font-size:14px; opacity:0.8;">
+    UPI ID: <b>prakash.gudade@ybl</b>
+  </p>
+</div>
+
+<script src="../chapter.js"></script>
+</body>
+</html>
