@@ -2,53 +2,63 @@
 <html lang="hi">
 <head>
   <meta charset="UTF-8">
-  <title>Adhuri Mohabbat – Chapter 1</title>
+  <title>Ankahi Dastan – Chapter 1 | Pehli Jhalak</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="chapter.css">
-
-  <!-- JS -->
-  <script src="chapter.js"></script>
+  <link rel="stylesheet" href="../chapter.css">
 </head>
-
 <body>
 
-<!-- Top bar -->
-<div class="top-bar">
-  <div class="moon-btn" onclick="toggleDark()">🌙</div>
-  <div class="page-badge">Page 1 / 7</div>
-</div>
+<button class="dark-toggle" onclick="toggleDark()">🌙</button>
+<div class="page-counter" id="pageCounter">Page 1</div>
 
-<!-- Chapter content -->
-<div class="chapter">
-  <h1>Adhuri Mohabbat</h1>
-  <h2>Chapter 1 – Pehli Jhalak</h2>
+<div class="chapter-container">
 
-  <p>
-    Pehli baar use dekha to waqt ruk sa gaya...
-  </p>
+  <h1 class="chapter-title">Ankahi Dastan</h1>
+  <h2 class="chapter-subtitle">Chapter 1 – Pehli Jhalak</h2>
 
-  <p>
-    Shaam dhal rahi thi, suraj dheere dheere...
-  </p>
-
-  <p>
-    Yeh sirf shuruaat thi, ankahi dastaan ki...
-  </p>
-
-  <!-- Navigation -->
-  <div class="nav-buttons">
-    <a href="chapter0.html">⬅ Previous Chapter</a>
-    <a href="../index.html">🏠 Novel Home</a>
-    <a href="chapter2.html">Next Chapter ➡</a>
+  <div class="page">
+    <p><b>Pehli jhalak.</b></p>
+    <p>
+      Kabhi kabhi kisi ko dekh kar  
+      dil ko samjhane ki zarurat nahi padti.
+    </p>
   </div>
+
+  <div class="page">
+    <p>
+      Woh saamne thi,  
+      aur main apni hi soch me uljha hua.
+    </p>
+  </div>
+
+  <div class="page">
+    <p>
+      Naam nahi jaanta tha uska,  
+      par ehsaas pehchaan sa lag raha tha.
+    </p>
+  </div>
+
+  <div class="page">
+    <p>
+      Shayad yahi se shuru hoti hain  
+      <b>Ankahi Dastan</b>.
+    </p>
+  </div>
+
+  <div class="nav-buttons">
+    <a href="../../index.html" class="nav-btn">🏠 Novel Home</a>
+    <a href="../chapter2/index.html" class="nav-btn">Next Chapter ➡️</a>
+  </div>
+
 </div>
 
-<!-- Donate -->
-<div class="donate-box">
-  <p>❤️ Agar yeh baatein tumhe apni si lagi ho</p>
-  <a href="#">Support / Donate</a>
+<div class="donate-footer">
+  ❤️ Agar yeh pehli jhalak dil tak pahunchi ho  
+  <br><br>
+  <a href="#" class="donate-btn">Support / Donate</a>
 </div>
 
+<script src="../chapter.js"></script>
 </body>
 </html>
