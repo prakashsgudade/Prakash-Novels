@@ -1,123 +1,135 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-<meta charset="UTF-8">
-<title>Ankahi Dastan – Chapter 4 | Chupa Dard</title>
+  <meta charset="UTF-8">
+  <title>Ankahi Dastan – Chapter 4 | Chupa Dard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="../chapter.css">
-<script defer src="../chapter.js"></script>
+  <!-- SAME CSS FOR ALL CHAPTERS -->
+  <link rel="stylesheet" href="../chapter.css">
 </head>
-
 <body>
 
-<!-- TOP BAR -->
-<div class="top-bar">
-  <a href="../index.html" class="home-btn">🏠 Novel Home</a>
-  <div class="page-count">Chapter 4 • Page <span id="pageNum">1</span>/7</div>
-</div>
+<!-- DARK MODE -->
+<button class="dark-toggle" onclick="toggleDark()">🌙</button>
 
-<!-- PROGRESS -->
-<div class="progress-container">
-  <div id="progressBar"></div>
-</div>
+<!-- PAGE COUNTER -->
+<div class="page-counter" id="pageCounter">Page 1</div>
 
-<!-- CONTENT -->
 <div class="chapter-container">
 
-<h1>अंकही दास्तान</h1>
-<h2>Chapter 4 – छुपा दर्द</h2>
+  <h1 class="chapter-title">Ankahi Dastan</h1>
+  <h2 class="chapter-subtitle">Chapter 4 – Chupa Dard</h2>
 
-<!-- PAGE 1 -->
-<p class="page">
-कभी-कभी सबसे गहरा दर्द वो होता है  
-जो चेहरे पर नहीं दिखता।  
-हँसी के पीछे छुपा,  
-और खामोशी में दफन।
+  <!-- PAGE 1 -->
+  <div class="page">
+    <p><b>Chupa Dard.</b></p>
+    <p>
+      Kuch dard bolte nahi hain,
+    </p>
+    <p>
+      bas dil ke andar  
+      chup-chaap rehte hain.
+    </p>
+  </div>
 
-उस दिन भी वो हँस रहा था…  
-लेकिन अंदर कुछ टूट रहा था।
-</p>
+  <!-- PAGE 2 -->
+  <div class="page">
+    <p>
+      Muskan chehre par hoti hai,
+    </p>
+    <p>
+      par uske peeche  
+      ek poori kahani chhupi hoti hai.
+    </p>
+  </div>
 
-<!-- PAGE 2 -->
-<p class="page">
-लोग पूछते थे —  
-“सब ठीक है ना?”
+  <!-- PAGE 3 -->
+  <div class="page">
+    <p>
+      Log samajhte hain sab theek hai,
+    </p>
+    <p>
+      kyunki hum shikayat nahi karte.
+    </p>
+  </div>
 
-वो सिर हिला देता था।  
-क्योंकि  
-हर दर्द को समझाने की ताक़त  
-हर किसी में नहीं होती।
-</p>
+  <!-- PAGE 4 -->
+  <div class="page">
+    <p>
+      Raat ko jab khamoshi hoti hai,
+    </p>
+    <p>
+      tab yeh chupa dard  
+      awaaz ban jaata hai.
+    </p>
+  </div>
 
-<!-- PAGE 3 -->
-<p class="page">
-रातें उसकी गवाह थीं।  
-तकिये ने सब सुना था।  
+  <!-- PAGE 5 -->
+  <div class="page">
+    <p>
+      Aankhon ke aansu  
+      aksar bahar nahi aate,
+    </p>
+    <p>
+      dil ke andar hi  
+      sookh jaate hain.
+    </p>
+  </div>
 
-वो नाम  
-जो होंठों तक आकर रुक जाता,  
-और वो आँसू  
-जो आँखों में ही सूख जाते।
-</p>
+  <!-- PAGE 6 -->
+  <div class="page">
+    <p>
+      Har insaan kuch na kuch  
+      chupaye phirta hai,
+    </p>
+    <p>
+      bas fark itna hai  
+      koi dikha deta hai, koi nahi.
+    </p>
+  </div>
 
-<!-- PAGE 4 -->
-<p class="page">
-उसने सीख लिया था  
-दर्द छुपाना।
+  <!-- PAGE 7 -->
+  <div class="page">
+    <p>
+      Shayad isi liye,
+    </p>
+    <p>
+      <b>Ankahi Dastan</b>  
+      sirf likhi nahi jaati,
+    </p>
+    <p>
+      mehsoos ki jaati hai.
+    </p>
+  </div>
 
-क्योंकि जब बताया था कभी,  
-तो जवाब मिला था —  
-“इतना भी कुछ खास नहीं है।”
-</p>
-
-<!-- PAGE 5 -->
-<p class="page">
-कुछ जख़्म  
-सिर्फ महसूस किए जाते हैं।  
-
-दिखाए नहीं जाते,  
-क्योंकि  
-गलत हाथों में पड़ जाएँ  
-तो और गहरे हो जाते हैं।
-</p>
-
-<!-- PAGE 6 -->
-<p class="page">
-वो मजबूत दिखता था,  
-लेकिन मजबूरी में।
-
-और शायद  
-सबसे मजबूत वही होते हैं  
-जो टूटकर भी  
-शिकायत नहीं करते।
-</p>
-
-<!-- PAGE 7 -->
-<p class="page">
-छुपा दर्द  
-खामोशी में जीता है।
-
-और एक दिन  
-बस इतना कहता है —  
-“थक गया हूँ…  
-लेकिन हार नहीं मानी।”
-</p>
+  <!-- NAVIGATION (SAME AS CHAPTER 3) -->
+  <div class="nav-buttons">
+    <a href="../chapter3/index.html" class="nav-btn">⬅️ Previous Chapter</a>
+    <a href="../../index.html" class="nav-btn">🏠 Novel Home</a>
+    <a href="../chapter5/index.html" class="nav-btn">Next Chapter ➡️</a>
+  </div>
 
 </div>
 
-<!-- DONATE -->
-<div class="donate-box">
-  <p>अगर ये शब्द दिल तक पहुँचे हों ❤️</p>
-  <a class="donate-btn" href="upi://pay?pa=prakash.gudade@ybl&pn=AnkahiDastan">
-    ☕ Support via PhonePe
+<!-- DONATE (PHONEPE ID INSIDE BUTTON) -->
+<div class="donate-footer">
+  ❤️ Agar yeh dard dil tak pahuncha ho  
+  <br><br>
+
+  <a 
+    href="upi://pay?pa=prakash.gudade@ybl&pn=Prakash%20Gudade"
+    class="donate-btn">
+    Support via PhonePe
   </a>
+
+  <p style="margin-top:12px; font-size:14px; opacity:0.8;">
+    UPI ID: <b>prakash.gudade@ybl</b>
+  </p>
 </div>
 
-<!-- NAVIGATION -->
-<div class="nav-buttons">
-  <a href="../chapter3/index.html">⬅ Previous</a>
-  <a href="../chapter5/index.html">Next ➡</a>
-</div>
+<!-- SAME JS FOR ALL CHAPTERS -->
+<script src="../chapter.js"></script>
 
 </body>
   </html>
