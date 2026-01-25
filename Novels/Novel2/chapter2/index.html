@@ -8,9 +8,27 @@
   <!-- SAME CSS FOR ALL CHAPTERS -->
   <link rel="stylesheet" href="../chapter.css">
 </head>
-  <a href="../donate.html" class="floating-support">
- ❤️ support via upi
-  </a>
+  /* FLOATING SUPPORT BUTTON */
+.floating-support {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: #fff;
+  padding: 14px 22px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(255, 75, 43, 0.5);
+  z-index: 9999;
+  transition: 0.3s;
+}
+
+.floating-support:hover {
+  transform: scale(1.05);
+  }
+  
 <body>
 
 <!-- DARK MODE -->
