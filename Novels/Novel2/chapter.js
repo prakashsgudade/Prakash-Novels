@@ -3,14 +3,14 @@ function toggleDark() {
 }
 
 const pages = document.querySelectorAll(".page");
-const pageNo = document.getElementById("pageNo");
+const currentPage = document.getElementById("currentPage");
 
 window.addEventListener("scroll", () => {
-  let current = 1;
+  let page = 1;
   pages.forEach((p, i) => {
     if (p.getBoundingClientRect().top < window.innerHeight / 2) {
-      current = i + 1;
+      page = i + 1;
     }
   });
-  pageNo.innerText = current;
+  currentPage.innerText = page;
 });
