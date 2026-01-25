@@ -111,24 +111,23 @@ body.dark {
   height: auto;
   border-radius: 12px;
 }
-/* SUPPORT AUTHOR BUTTON */
-.support-btn {
-  display: block;
-  margin: 40px auto;
-  padding: 16px 26px;
-  max-width: 260px;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 50px;
+/* FLOATING SUPPORT BUTTON */
+.floating-support {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   background: linear-gradient(135deg, #ff416c, #ff4b2b);
-  box-shadow: 0 8px 20px rgba(255, 75, 43, 0.4);
+  color: #fff;
+  padding: 14px 22px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(255, 75, 43, 0.5);
+  z-index: 9999;
   transition: 0.3s;
 }
 
-.support-btn:hover {
+.floating-support:hover {
   transform: scale(1.05);
-  box-shadow: 0 12px 25px rgba(255, 75, 43, 0.6);
-    }
+  }
