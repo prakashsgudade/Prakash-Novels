@@ -106,3 +106,8 @@ body.dark {
 @media (max-width:600px){
   .page p { font-size: 17px; }
   }
+.qr-area img {
+  width: 160px;
+  height: auto;
+  border-radius: 12px;
+}
