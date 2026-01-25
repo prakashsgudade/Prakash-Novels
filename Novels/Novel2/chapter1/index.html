@@ -1,92 +1,83 @@
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-  <meta charset="UTF-8">
-  <title>Ankahi Dastan – Pehli Jhalak</title>
-  <link rel="stylesheet" href="../chapter.css">
-</head>
-<body>
+body {
+  font-family: Georgia, serif;
+  background: #fafafa;
+  color: #222;
+  line-height: 1.9;
+  padding: 20px;
+}
 
-<!-- TOP BAR -->
-<div class="top-bar">
-  <button onclick="goHome()">🏠 Home</button>
-  <button onclick="goNovel()">📘 Novel</button>
-  <button onclick="toggleDark()">🌙 Dark</button>
-</div>
+.dark {
+  background: #111;
+  color: #eee;
+}
 
-<!-- PAGE COUNT -->
-<div class="page-count">
-  Page <span id="currentPage">1</span> / 7
-</div>
+.top-nav {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
 
-<!-- DONATE -->
-<div class="donate-box">
-  ❤️ Support this story  
-  <button>Donate via UPI</button>
-</div>
+.top-nav a, .top-nav button {
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: #222;
+  color: #fff;
+  border: none;
+}
 
-<!-- STORY -->
-<main class="story">
+.page-indicator {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
 
-<h1>Ankahi Dastan</h1>
-<h2>Chapter 1 – Pehli Jhalak</h2>
+h1 {
+  text-align: center;
+  font-size: 32px;
+}
 
-<p class="page">  
-Pehli baar usse dekha to laga jaise waqt thodi der ke liye ruk gaya ho…  
-Hawa bhi shor karna bhool gayi thi. Uski aankhon me kuch tha —  
-shayad ek kahani, jo abhi likhi nahi gayi thi.  
-</p>
+h2 {
+  text-align: center;
+  font-size: 18px;
+  opacity: 0.7;
+  margin-bottom: 40px;
+}
 
-<p class="page">
-Gaon ki us patli si sadak par chalte hue,  
-uski ek jhalak ne dil me toofan macha diya.  
-Kuch log zindagi me aate hain,  
-aur kuch zindagi ban jaate hain.
-</p>
+.story {
+  max-width: 720px;
+  margin: auto;
+}
 
-<p class="page">
-Us din suraj bhi dheere doob raha tha,  
-jaise woh bhi dekhna chahta ho  
-yeh kahani kis mod par jaayegi.  
-Maine usse awaaz dena chaha…  
-par lafz saath chhod gaye.
-</p>
+.page {
+  font-size: 19px;
+  margin-bottom: 120px; /* page feel */
+}
 
-<p class="page">
-Raat bhar neend nahi aayi.  
-Dimag me sirf ek hi sawaal tha —  
-kya woh bhi mujhe mehsoos karti hai?  
-Ya yeh sirf meri khamosh mohabbat hai?
-</p>
+.donate {
+  text-align: center;
+  margin: 40px 0;
+}
 
-<p class="page">
-Subah hui to aasman saaf tha,  
-par dil me ab bhi baadal the.  
-Uski muskaan yaad aayi,  
-aur laga jaise zindagi phir se muskurai.
-</p>
+.donate button {
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: none;
+  background: crimson;
+  color: white;
+}
 
-<p class="page">
-Yeh sirf shuruaat thi…  
-Ankahi Dastan ki pehli jhalak.  
-Aage kya hoga, yeh waqt hi batayega.
-</p>
+.bottom-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 40px 0;
+}
 
-</main>
-
-<!-- BOTTOM BUTTONS -->
-<div class="bottom-nav">
-  <a href="../../index.html" class="big-btn">🏠 Home</a>
-  <a href="../index.html" class="big-btn">📘 Novel Page</a>
-  <a href="../chapter2/index.html" class="big-btn">➡ Next Chapter</a>
-</div>
-
-<!-- DONATE AGAIN -->
-<div class="donate-box bottom">
-  ❤️ Agar kahani dil ko chhoo gayi ho  
-  <button>Donate & Support</button>
-</div>
-
-<script src="../chapter.js"></script>
-</body>
-  </html>
+.bottom-links a {
+  padding: 10px 20px;
+  background: #222;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+}
