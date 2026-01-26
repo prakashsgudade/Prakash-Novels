@@ -8,6 +8,37 @@
   <!-- SAME CSS FOR ALL CHAPTERS -->
   <link rel="stylesheet" href="../chapter.css">
 </head>
+    <a href="../donate.html" class="support-float" aria-label="Support the author">
+  ❤️
+</a>
+
+<style>
+.support-float{
+  position: fixed;
+  bottom: 22px;
+  right: 18px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: radial-gradient(circle at top,#ff6b6b,#c9184a);
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 9999;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  animation: pulse 2.5s infinite;
+}
+
+/* soft breathing animation */
+@keyframes pulse{
+  0%{ transform: scale(1); box-shadow:0 0 0 0 rgba(255,75,75,0.6);}
+  70%{ transform: scale(1.08); box-shadow:0 0 0 18px rgba(255,75,75,0);}
+  100%{ transform: scale(1); }
+}
+</style>
 <body>
 
 <!-- DARK MODE -->
@@ -106,7 +137,7 @@
   <!-- NAVIGATION (SAME AS CHAPTER 3) -->
   <div class="nav-buttons">
     <a href="../chapter3/index.html" class="nav-btn">⬅️ Previous Chapter</a>
-    <a href="../../index.html" class="nav-btn">🏠 Novel Home</a>
+    <a href="../index.html" class="nav-btn">🏠 Novel Home</a>
     <a href="../chapter5/index.html" class="nav-btn">Next Chapter ➡️</a>
   </div>
 
@@ -116,15 +147,7 @@
 <div class="donate-footer">
   ❤️ Agar yeh dard dil tak pahuncha ho  
   <br><br>
-
-  <a 
-    href="upi://pay?pa=prakash.gudade@ybl&pn=Prakash%20Gudade"
-    class="donate-btn">
-    Support via PhonePe
-  </a>
-<a href="../donate.html" class="floating-support">
- ❤️ Support
-    </a>
+  
   <p style="margin-top:12px; font-size:14px; opacity:0.8;">
     UPI ID: <b>prakash.gudade@ybl</b>
   </p>
