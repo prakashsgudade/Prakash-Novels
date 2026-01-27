@@ -1,135 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
   <meta charset="UTF-8">
-  <title>Prakash | Novelist</title>
+  <title>Prakash | उपन्यास संसार</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
-  <a href="novels/novel2/donate.html" class="floating-support">
- ❤️ Support
-  </a>
 <body>
-  .upi {
-      font-weight: bold;
-      margin-top: 10px;
 
-<!-- 🌙 Dark Mode Toggle -->
-<div class="dark-toggle" onclick="toggleDark()">🌙</div>
-<div class="font-controls">
-  <button onclick="decreaseFont()">A-</button>
-  <button onclick="resetFont()">A</button>
-  <button onclick="increaseFont()">A+</button>
-</div>
-<!-- ================= HERO SECTION ================= -->
-<section class="hero">
-  <img src="prakash.jpg1.jpg" class="author-pic">
-  <h1>Prakash</h1>
-  <p class="hero-line">
-    I write stories for hearts that feel too much.
-  </p>
+  <!-- HERO / AUTHOR SECTION -->
+  <header class="hero">
+    <img src="your-photo.jpg" alt="Author Prakash" class="author-pic">
 
-  <button class="main-btn" onclick="scrollToNovels()">
-    📖 Read My Novels
-  </button>
-</section>
+    <h1>प्रकाश</h1>
+    <p class="tagline">
+      शब्दों में बसी कहानियाँ,  
+      जो दिल तक उतर जाएँ…
+    </p>
+  </header>
 
-<!-- ================= NOVELS SECTION ================= -->
-<section id="novels" class="novels-section">
+  <!-- NOVEL SECTION -->
+  <section class="novels">
+    <h2>📚 मेरे उपन्यास</h2>
 
-  <h2 class="section-title">My Novels</h2>
+    <div class="novel-grid">
 
-  <div class="novel-grid">
+      <!-- NOVEL 1 -->
+      <div class="novel-card active">
+        <h3>देवनागरी</h3>
+        <p>
+          एक ऐसी कहानी  
+          जो शब्दों से नहीं,  
+          एहसासों से पढ़ी जाती है।
+        </p>
+        <a href="#" class="read-btn">📖 पढ़ें</a>
+      </div>
 
-    <div class="novel-card">
-      <h3>अधूरी मोहब्बत</h3>
-      <p>
-        Ek emotional kahani jo pyaar,
-        yaadon aur khamoshi ke beech jeeti hai.
-      </p>
-     
-    <a href="Novels/Novel1/index.html" class="read-btn">Read</a>
-      
+      <!-- COMING SOON -->
+      <div class="novel-card coming">
+        <h3>Coming Soon</h3>
+        <span>✨ जल्द आ रहा है</span>
+      </div>
+
+      <div class="novel-card coming">
+        <h3>Coming Soon</h3>
+        <span>✨ जल्द आ रहा है</span>
+      </div>
+
+      <div class="novel-card coming">
+        <h3>Coming Soon</h3>
+        <span>✨ जल्द आ रहा है</span>
+      </div>
+
+      <div class="novel-card coming">
+        <h3>Coming Soon</h3>
+        <span>✨ जल्द आ रहा है</span>
+      </div>
+
     </div>
-    
+  </section>
+
+  <!-- DONATE -->
+  <section class="donate">
+    <h2>❤️ सहयोग करें</h2>
+    <p>
+      अगर मेरी कहानियाँ  
+      आपके दिल तक पहुँची हों  
+      तो आप सहयोग कर सकते हैं।
+    </p>
+
+    <a href="upi://pay?pa=prakash.gudade@upi&pn=Prakash" class="donate-btn">
+      ☕ UPI से Donate करें
     </a>
+  </section>
 
-    <div class="novel-card">
-      <h3>अनकही दास्तान</h3>
-      <p>
-        Jab rishton ke beech galatfahmi
-        sab kuch tod deti hai.
-      </p>
-      <a href="Novels/Novel2/index.html" class="read-btn">Read</a>
-    </div>
+  <!-- FOOTER -->
+  <footer>
+    © 2026 | शब्दों का संसार – प्रकाश
+  </footer>
 
-    <div class="novel-card">
-      <h3>छुपा इश्क़</h3>
-      <p>
-        Adhuri mohabbat ki kahani
-        jo kabhi poori nahi hoti.
-      </p>
-      <a href="Novels/Novel3/index.html" class="read-btn">Read</a>
-    </div>
-
-    <div class="novel-card">
-      <h3>खामोश रास्ते</h3>
-      <p>
-        Ek safar jo shehar se zyada
-        dil ke andar hota hai.
-      </p>
-      <a href="Novels/Novel4/index.html" class="read-btn">Read</a>
-    </div>
-
-    <div class="novel-card">
-      <h3>टूटे ख़्वाब</h3>
-      <p>
-        Jab yaadein zinda reh jaati hain
-        aur log chhoot jaate hain.
-      </p>
-      <a href="Novels/Novel5/index.html" class="read-btn">Read</a>
-    </div>
-
-  </div>
-</section>
-
-<!-- ================= SUPPORT SECTION ================= -->
-<section class="support">
-  <h2>Support My Writing ❤️</h2>
-
-  <button class="upi-btn">
-    UPI : prakash.gudade@ybl
-            (9359094903)
-  </div>
-  </button>
-
-</div>
-  
-
-  <div class="social">
-
-    
-    <div class="donate">
-  <a href="upi://pay?pa=prakash.gudade@ybl&pn=Prakash&tn=Support+the+Author&am=149">
-    ❤️ Support via UPI ₹149
-  
-  </a>
-  </div>>buy me a coffie</a>
-  </div>
-</section>
-  
-<!-- ================= FUTURE SPACE ================= -->
-<section class="future">
-  <h2>More Stories Coming Soon…</h2>
-  <p>
-    Yeh jagah future letters, poems,
-    ya special content ke liye rakhi gayi hai.
-  </p>
-</section>
-
-<footer>
-  © 2026 Prakash
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
-</html>
+                         </html>
