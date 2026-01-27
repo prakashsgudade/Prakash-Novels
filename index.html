@@ -2,30 +2,221 @@
 <html lang="hi">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>प्रकाश | उपन्यास संसार</title>
 
+<!-- GOOGLE FONTS -->
 <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+
+<style>
+/* ===== RESET ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Hind', sans-serif;
+  background:#0e0e0e;
+  color:#eee;
+  line-height:1.7;
+}
+
+/* ===== HERO ===== */
+.hero{
+  text-align:center;
+  padding:70px 20px;
+  background:linear-gradient(180deg,#111,#0[js]e0e0e);
+}
+
+.author-pic{
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid #c0392b;
+  margin-bottom:20px;
+}
+
+.hero h1{
+  font-family:'Playfair Display', serif;
+  font-size:42px;
+  letter-spacing:2px;
+}
+
+.tagline{
+  font-size:20px;
+  margin:20px 0;
+  color:#f5f5f5;
+}
+
+.intro{
+  max-width:600px;
+  margin:0 auto;
+  color:#ccc;
+  font-size:16px;
+}
+
+/* ===== SECTIONS ===== */
+section{
+  padding:60px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+h2{
+  text-align:center;
+  font-family:'Playfair Display', serif;
+  font-size:30px;
+  margin-bottom:30px;
+}
+
+/* ===== ABOUT ===== */
+.about p{
+  max-width:700px;
+  margin:15px auto;
+  color:#ccc;
+  font-size:17px;
+  text-align:center;
+}
+
+/* ===== NOVELS ===== */
+.novel-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+
+.novel-card{
+  background:#151515;
+  padding:25px;
+  border-radius:14px;
+  text-align:center;
+  transition:0.3s;
+}
+
+.novel-card:hover{
+  transform:translateY(-6px);
+}
+
+.novel-cover{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius:10px;
+  margin-bottom:15px;
+}
+
+.novel-card h3{
+  font-family:'Playfair Display', serif;
+  font-size:22px;
+  margin-bottom:10px;
+}
+
+.novel-hook{
+  font-style:italic;
+  color:#f1c40f;
+  margin-bottom:10px;
+}
+
+.novel-desc,
+.novel-benefit{
+  font-size:15px;
+  color:#ccc;
+  margin-bottom:10px;
+}
+
+.read-btn{
+  display:inline-block;
+  margin-top:12px;
+  padding:10px 22px;
+  background:#c0392b;
+  color:#fff;
+  text-decoration:none;
+  border-radius:25px;
+  font-size:15px;
+}
+
+.read-btn:hover{
+  background:#e74c3c;
+}
+
+.coming{
+  opacity:0.6;
+}
+
+.coming-summary{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-style:italic;
+  font-size:16px;
+}
+
+/* ===== DONATE ===== */
+.donate{
+  text-align:center;
+  background:#111;
+  border-radius:20px;
+}
+
+.donate-text{
+  max-width:600px;
+  margin:0 auto 20px;
+  color:#ddd;
+  font-size:17px;
+}
+
+.donate-btn{
+  display:inline-block;
+  background:#27ae60;
+  color:#fff;
+  padding:14px 28px;
+  border-radius:30px;
+  text-decoration:none;
+  font-size:17px;
+}
+
+.donate-btn:hover{
+  background:#2ecc71;
+}
+
+.donate-note{
+  margin-top:15px;
+  font-size:14px;
+  color:#aaa;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  text-align:center;
+  padding:30px 15px;
+  color:#777;
+  font-size:14px;
+}
+</style>
 </head>
 
 <body>
 
 <!-- HERO -->
 <header class="hero">
-  <img src="your-photo.jpg" class="author-pic">
+  <img src="prakash.jpg1.jpg" alt="Author Photo" class="author-pic">
 
   <h1>प्रकाश</h1>
 
-  <p class="tagline big">
-    मैं कहानियाँ लिखता हूँ,  
-    ताकि जो कहा नहीं जा सका  
+  <p class="tagline">
+    मैं कहानियाँ लिखता हूँ,<br>
+    ताकि जो कहा नहीं जा सका<br>
     वो शब्दों में जिंदा रह सके।
   </p>
 
   <p class="intro">
     यह पेज सिर्फ उपन्यासों की सूची नहीं है।  
     यह उन एहसासों का घर है  
-    जो रातों को जगाते हैं,  
+    जो रातों को जगाते हैं  
     और दिन में मुस्कुराने की वजह बनते हैं।
   </p>
 </header>
@@ -35,14 +226,13 @@
   <h2>✍️ लेखक के शब्द</h2>
 
   <p>
-    हर कहानी किसी कल्पना से नहीं जन्म लेती।  
+    हर कहानी कल्पना से नहीं जन्म लेती।  
     कुछ कहानियाँ ज़िंदगी के उन पन्नों से निकलती हैं  
     जिन्हें हम किसी से बाँट नहीं पाते।
   </p>
 
   <p>
-    मेरे उपन्यास उन्हीं टूटे, अधूरे,  
-    मगर सच्चे पलों का संग्रह हैं।  
+    मेरे उपन्यास उन्हीं अधूरे मगर सच्चे पलों का संग्रह हैं।  
     अगर आपको इनमें खुद का अक्स दिखे,  
     तो समझिए कहानी सफल हुई।
   </p>
@@ -55,46 +245,41 @@
   <div class="novel-grid">
 
     <div class="novel-card active">
+      <img src="devnagri-cover.jpg" class="novel-cover" alt="देवनागरी उपन्यास">
+
       <h3>देवनागरी</h3>
+
+      <p class="novel-hook">
+        यह कहानी आपके फोन से नहीं,<br>
+        आपकी यादों से जुड़ेगी।
+      </p>
+
       <p class="novel-desc">
         देवनागरी सिर्फ एक भाषा नहीं,  
         यह आत्मा की आवाज़ है।  
-        यह उपन्यास प्रेम, पीड़ा,  
-        और पहचान की कहानी कहता है।
+        प्रेम, पीड़ा और पहचान की कहानी।
       </p>
+
+      <p class="novel-benefit">
+        उन लोगों के लिए  
+        जो शब्दों में खुद को ढूंढते हैं।
+      </p>
+
       <a href="#" class="read-btn">📖 पूरा उपन्यास पढ़ें</a>
     </div>
 
     <div class="novel-card coming">
       <h3>Coming Soon</h3>
-      <p>
-        एक ऐसी कहानी  
-        जो खामोशी में लिखी जा रही है।
-      </p>
+      <p>कुछ रिश्ते नाम से पहले आ जाते हैं।</p>
     </div>
 
     <div class="novel-card coming">
       <h3>Coming Soon</h3>
-      <p>
-        कुछ रिश्ते  
-        नाम से पहले आ जाते हैं।
-      </p>
+      <p>जब यादें कहानी बन जाएँ।</p>
     </div>
 
-    <div class="novel-card coming">
-      <h3>Coming Soon</h3>
-      <p>
-        हर मोड़ पर  
-        एक नया सच।
-      </p>
-    </div>
-
-    <div class="novel-card coming">
-      <h3>Coming Soon</h3>
-      <p>
-        जब यादें  
-        कहानी बन जाएँ।
-      </p>
+    <div class="novel-card coming coming-summary">
+      ✍️ 3 और कहानियाँ लिखी जा रही हैं…
     </div>
 
   </div>
@@ -105,23 +290,44 @@
   <h2>❤️ लेखक को सहयोग दें</h2>
 
   <p class="donate-text">
-    अगर इन कहानियों ने  
-    आपके दिल के किसी कोने को छुआ हो,  
-    तो आपका छोटा-सा सहयोग  
-    अगली कहानी की शुरुआत बन सकता है।
+    यह सहयोग किसी संस्था के लिए नहीं,  
+    एक लेखक की अगली रात की चाय  
+    और अगली कहानी के लिए है।
   </p>
 
   <a href="upi://pay?pa=prakash.gudade@upi&pn=Prakash" class="donate-btn">
     ☕ UPI से सहयोग करें
   </a>
+
+  <p class="donate-note">
+    ₹10 भी एक कहानी को आगे बढ़ा सकता है।
+  </p>
 </section>
 
 <footer>
-  <p>
-    © 2026 | शब्द, भावनाएँ और कहानियाँ — प्रकाश
-  </p>
+  © 2026 | शब्द, भावनाएँ और कहानियाँ — प्रकाश
 </footer>
 
-<script src="script.js"></script>
+<script>
+/* Simple fade-in on scroll */
+const sections = document.querySelectorAll("section, header");
+
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.style.opacity = 1;
+      entry.target.style.transform = "translateY(0)";
+    }
+  });
+},{threshold:0.2});
+
+sections.forEach(sec=>{
+  sec.style.opacity = 0;
+  sec.style.transform = "translateY(40px)";
+  sec.style.transition = "1s";
+  observer.observe(sec);
+});
+</script>
+
 </body>
   </html>
