@@ -1,414 +1,146 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-body {
-  font-family: "Georgia", serif;
-  background: #f7f4ef;
-  color: #222;
-  transition: 0.3s;
-}
-
-body.dark {
-  background: #111;
-  color: #eee;
-}
-
-/* Dark toggle */
-.dark-toggle {
-  position: fixed;
-  top: 15px;
-  right: 15px;
-  cursor: pointer;
-  font-size: 20px;
+body{
+  font-family:'Hind', sans-serif;
+  background:linear-gradient(180deg,#0b0b0b,#1a1a1a);
+  color:#eee;
 }
 
 /* HERO */
-.hero {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 30px;
+.hero{
+  text-align:center;
+  padding:60px 20px;
 }
 
-.author-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
+.author-pic{
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  border:4px solid #caa35c;
+  object-fit:cover;
+  margin-bottom:15px;
 }
 
-.hero h1 {
-  font-size: 40px;
+.hero h1{
+  font-family:'Playfair Display', serif;
+  font-size:38px;
+  color:#f5d88a;
 }
 
-.hero-line {
-  margin: 15px 0 30px;
-  font-size: 18px;
-  opacity: 0.8;
-}
-
-.main-btn {
-  padding: 15px 40px;
-  font-size: 18px;
-  border: none;
-  border-radius: 40px;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
+.tagline{
+  margin-top:10px;
+  font-size:17px;
+  opacity:0.85;
+  line-height:1.6;
 }
 
 /* NOVELS */
+.novels{
+  padding:50px 20px;
 }
 
-.section-title {
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 50px;
+.novels h2{
+  text-align:center;
+  margin-bottom:30px;
+  font-size:26px;
+  color:#f5d88a;
 }
 
-.novel-grid {
-  max-width: 1000px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  gap: 25px;
+.novel-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  max-width:1100px;
+  margin:auto;
 }
 
-.novel-card {
-  background: #fff;
-  padding: 25px;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+.novel-card{
+  background:#111;
+  border-radius:18px;
+  padding:25px;
+  text-align:center;
+  box-shadow:0 15px 30px rgba(0,0,0,0.6);
+  transition:0.4s;
 }
 
-body.dark .novel-card {
-  background: #1c1c1c;
+.novel-card:hover{
+  transform:translateY(-8px);
 }
 
-.novel-card h3 {
-  font-size: 22px;
+.novel-card h3{
+  font-family:'Playfair Display', serif;
+  font-size:22px;
+  margin-bottom:10px;
 }
 
-.novel-card p {
-  margin: 15px 0;
-  font-size: 16px;
+.novel-card p{
+  font-size:15px;
+  line-height:1.6;
+  opacity:0.85;
 }
 
-.read-btn {
-  padding: 10px 25px;
-  border-radius: 30px;
-  border: none;
-  background: #ff4c4c;
-  color: #fff;
-  cursor: pointer;
+.read-btn{
+  display:inline-block;
+  margin-top:15px;
+  padding:10px 22px;
+  background:#caa35c;
+  color:#000;
+  border-radius:25px;
+  text-decoration:none;
+  font-weight:600;
 }
 
-/* SUPPORT */
-.support {
-  text-align: center;
-  padding: 80px 20px;
+.coming{
+  opacity:0.5;
 }
 
-.upi-btn {
-  padding: 15px 30px;
-  font-size: 18px;
-  border-radius: 40px;
-  border: none;
-  background: #000;
-  color: #fff;
-  margin: 20px 0;
-}
-
-.qr {
-  width: 200px;
-  margin: 20px auto;
-  display: block;
-}
-
-.social a {
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-/* FUTURE */
-.future {
-  padding: 100px 20px;
-  text-align: center;
-  opacity: 0.6;
-}
-
-footer {
-  text-align: center;
-  padding: 30px;
-  font-size: 14px;
-  }
-/* ================= FONT SIZE CONTROLS ================= */
-.font-controls {
-  position: fixed;
-  top: 15px;
-  left: 15px;
-  display: flex;
-  gap: 6px;
-  z-index: 999;
-}
-
-.font-controls button {
-  padding: 6px 10px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 14px;
-  background: #000;
-  color: #fff;
-}
-
-body.dark .font-controls button {
-  background: #fff;
-  color: #000;
-}
-/* ================= NOVEL HERO ================= */
-.novel-hero {
-  text-align: center;
-  padding: 80px 20px 50px;
-}
-
-.novel-cover {
-  width: 220px;
-  border-radius: 18px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-}
-
-.novel-title {
-  margin-top: 25px;
-  font-size: 36px;
-}
-
-.novel-author {
-  margin-top: 5px;
-  font-size: 16px;
-  opacity: 0.7;
-}
-
-.novel-desc {
-  max-width: 700px;
-  margin: 25px auto 0;
-  font-size: 18px;
-  line-height: 1.7;
-  opacity: 0.9;
-}
-
-/* ================= PROGRESS ================= */
-.progress-area {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-.progress-text {
-  margin-bottom: 8px;
-  font-size: 14px;
-}
-
-.progress-bar {
-  width: 100%;
-  height: 10px;
-  background: #ddd;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.progress-fill {
-  height: 100%;
-  width: 0%;
-  background: #ff4c4c;
-}
-
-/* ================= CHAPTER LIST ================= */
-.chapters-area {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.chapter-count {
-  opacity: 0.6;
-  margin-bottom: 25px;
-}
-
-.chapter-list {
-  max-width: 600px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.chapter-btn {
-  padding: 16px;
-  border-radius: 14px;
-  text-decoration: none;
-  background: #000;
-  color: #fff;
-  font-size: 18px;
-  transition: 0.2s;
-}
-
-.chapter-btn:hover {
-  background: #ff4c4c;
-}
-
-/* ================= DARK MODE ================= */
-body.dark .progress-bar {
-  background: #333;
-}
-
-body.dark .chapter-btn {
-  background: #fff;
-  color: #000;
-}
-/* ===== NOVEL LANDING PAGE ===== */
-.novel-page {
-  max-width: 850px;
-  margin: 40px auto;
-  padding: 30px;
-  background: linear-gradient(180deg, #1b0f0a, #120805);
-  border-radius: 22px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
-  transition: all 0.3s ease;
-}
-
-body.light .novel-page {
-  background: #fff7ee;
-  color: #2b1b10;
-}
-
-/* COVER */
-.novel-cover {
-  width: 180px;
-  border-radius: 14px;
-  display: block;
-  margin: auto;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-}
-
-/* TITLE */
-.novel-page h1 {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 36px;
-  letter-spacing: 1px;
-}
-
-.author {
-  text-align: center;
-  color: #d4af37;
-  font-size: 14px;
-}
-
-/* STORY */
-.synopsis {
-  margin: 25px 0;
-  text-align: center;
-  font-style: italic;
-  line-height: 1.8;
-  font-size: 17px;
-}
-
-/* TOGGLE */
-.toggle {
-  position: fixed;
-  top: 15px;
-  left: 15px;
-  background: #b85c1e;
-  color: #fff;
-  padding: 8px 16px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 13px;
-}
-
-/* PROGRESS */
-.progress-box {
-  margin: 30px 0;
-  background: rgba(255,255,255,0.1);
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.progress-bar {
-  height: 8px;
-  width: 0%;
-  background: linear-gradient(90deg, #e67e22, #ffd194);
-}
-
-.progress-text {
-  text-align: center;
-  font-size: 13px;
-  margin-top: 8px;
-}
-
-/* CHAPTERS */
-.chapter-heading {
-  text-align: center;
-  margin: 40px 0 20px;
-}
-
-.chapter-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
-}
-
-.chapter-btn {
-  padding: 16px;
-  background: linear-gradient(145deg, #b85c1e, #e67e22);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 18px;
-  text-align: center;
-  font-weight: bold;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-}
-
-.chapter-btn:hover {
-  transform: translateY(-3px);
+.coming span{
+  font-size:14px;
+  letter-spacing:1px;
 }
 
 /* DONATE */
-.donate-btn {
-  display: block;
-  margin: 40px auto 10px;
-  padding: 16px 40px;
-  background: linear-gradient(145deg, #8e2de2, #4a00e0);
-  color: #fff;
-  border-radius: 35px;
-  text-decoration: none;
-  font-weight: bold;
-  text-align: center;
-  }
-/* FLOATING SUPPORT BUTTON */
-.floating-support {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: linear-gradient(135deg, #ff416c, #ff4b2b);
-  color: #fff;
-  padding: 14px 22px;
-  border-radius: 50px;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
-  box-shadow: 0 8px 20px rgba(255, 75, 43, 0.5);
-  z-index: 9999;
-  transition: 0.3s;
+.donate{
+  background:#0f0f0f;
+  text-align:center;
+  padding:50px 20px;
 }
 
-.floating-support:hover {
-  transform: scale(1.05);
+.donate h2{
+  color:#ff6b6b;
+  margin-bottom:10px;
+}
+
+.donate p{
+  font-size:15px;
+  opacity:0.85;
+  line-height:1.7;
+}
+
+.donate-btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:14px 28px;
+  background:#ff6b6b;
+  color:#fff;
+  border-radius:30px;
+  text-decoration:none;
+  font-size:16px;
+  transition:0.3s;
+}
+
+.donate-btn:hover{
+  transform:scale(1.08);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  font-size:14px;
+  opacity:0.6;
 }
