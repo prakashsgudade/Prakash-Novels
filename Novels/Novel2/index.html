@@ -1,9 +1,9 @@
 <!-- NOVEL 2 : LANDING PAGE -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
   <meta charset="UTF-8">
-  <title>देवनागिरी</title>
+  <title>देवनागरी</title>
 
   <!-- BEST GOOGLE FONT -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
@@ -98,20 +98,39 @@
       background:rgba(255,119,169,0.3);
     }
 
-    .donate{
-      margin-top:40px;
-      text-align:center;
+    /* Alternate Ending Badge */
+    .special-ending{
+      margin: 20px auto;
+      padding: 12px 18px;
+      width: fit-content;
+      background: linear-gradient(135deg,#ff758f,#ff4d6d);
+      color: white;
+      font-weight: bold;
+      border-radius: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      animation: glow 2s infinite;
+      text-align: center;
+      font-size: 16px;
+    }
+    @keyframes glow{
+      0%{ box-shadow:0 0 10px rgba(255,117,143,0.6);}
+      50%{ box-shadow:0 0 25px rgba(255,77,109,0.9);}
+      100%{ box-shadow:0 0 10px rgba(255,117,143,0.6);}
     }
 
-    .donate a{
-      display:inline-block;
-      background:#a9059e;
-      padding:16px 40px;
-      border-radius:40px;
-      color:#fff;
-      font-size:18px;
-      text-decoration:none;
-      margin:10px;
+    /* Author Note */
+    .author-note{
+      margin: 40px auto;
+      padding: 22px;
+      max-width: 700px;
+      background: rgba(0,0,0,0.04);
+      border-left: 4px solid #c9184a;
+      font-style: italic;
+      line-height: 1.8;
+      border-radius: 12px;
+    }
+    body.dark .author-note{
+      background: rgba(255,255,255,0.06);
     }
 
     .footer-nav{
@@ -136,6 +155,7 @@
       background:#a9059e;
       color:#fff;
     }
+
   </style>
 </head>
 
@@ -144,14 +164,12 @@
 <div class="novel-wrap">
 
   <!-- COVER -->
-  <div class="cover">देवनागिरी</div>
+  <div class="cover">देवनागरी</div>
 
   <!-- TITLE -->
-  <h1>देवनागिरी</h1>
+  <h1>देवनागरी</h1>
   <div class="author">by Prakash Gudade</div>
-</div>
-  
-</div>
+
   <!-- SYNOPSIS -->
   <div class="synopsis">
     कुछ अल्फाज़ हमेशा रह जाते हैं अधूरे।  
@@ -182,17 +200,50 @@
     <a href="chapter10/index.html" class="chapter">Chapter 10 – उम्मीदें</a>
     <a href="chapter11/index.html" class="chapter">Chapter 11 – तन्हाई</a>
     <a href="chapter12/index.html" class="chapter">Chapter 12 – आख़िरी एहसास</a>
+    <a href="chapter13/index.html" class="chapter">Chapter 13 – मोहन का सच</a>
+    <a href="chapter14/index.html" class="chapter">Chapter 14 – नया मोड़</a>
+    <a href="chapter15/index.html" class="chapter">Chapter 15 – पहला Crack</a>
+    <a href="chapter16/index.html" class="chapter">Chapter 16 – Ira की entry</a>
+    <a href="chapter17/index.html" class="chapter">Chapter 17 – रिश्तों का सच</a>
+    <a href="chapter18/index.html" class="chapter">Chapter 18 – Ira की झलक</a>
+    <a href="chapter19/index.html" class="chapter">Chapter 19 – जो खुलने लगा</a>
+    <a href="chapter20/index.html" class="chapter">Chapter 20 – जो लिखा नहीं गया</a>
+  </div>
+
+  <!-- ALTERNATE ENDING BADGE -->
+  <div class="special-ending">
+    ✨ Alternate Happy Ending Available
+  </div>
+  <a href="alternate-ending/index.html" class="chapter" style="text-align:center;">
+    ✨ Read Alternate Happy Ending
+  </a>
+
+  <!-- AUTHOR NOTE -->
+  <div class="author-note">
+    <h3>🖋️ लेखक की बात</h3>
+    <p>
+      यह कहानी एक जवाब नहीं है,<br>
+      बल्कि एक सवाल है —
+      कि सच, डर और समाज के बीच<br>
+      इंसान कहाँ खड़ा होता है।
+    </p>
+    <p>
+      अगर आपको Alternate Ending बेहतर लगे,<br>
+      तो समझिए —
+      आपने उम्मीद को चुना।
+    </p>
+    <p>
+      और अगर Original Ending सच्ची लगे,<br>
+      तो आपने हकीकत को।
+    </p>
+    <p><b>— लेखक</b></p>
   </div>
 
   <!-- DONATE -->
   <div class="donate">  
-<a href="upi://pay?pa=prakash.gudade@ybl&pn=Prakash&tn=">❤️ Support via UPI</a>
-
-    <div class="donate">
-  <a href="upi://pay?pa=prakash.gudade@ybl&pn=Prakash&tn=Support+the+Author&am=149">
-    ❤️ Support via UPI ₹149
-  </a>
-    </div>
+    <a href="upi://pay?pa=prakash.gudade@ybl&pn=Prakash&tn=Support+the+Author&am=149">
+      ❤️ Support via UPI ₹149
+    </a>
   </div>
 
   <!-- BACK TO HOME -->
@@ -203,4 +254,4 @@
 </div>
 
 </body>
-  </html>
+</html>
