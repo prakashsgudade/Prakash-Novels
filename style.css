@@ -1,17 +1,15 @@
-/* ===== RESET ===== */
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
 }
 
-/* ===== BODY ===== */
 body{
   font-family:'Hind', sans-serif;
   background:#111;
 }
 
-/* ===== BOOK CONTAINER ===== */
+/* BOOK */
 .book{
   max-width:1100px;
   margin:40px auto;
@@ -22,7 +20,7 @@ body{
   overflow:hidden;
 }
 
-/* ===== LEFT PAGE ===== */
+/* LEFT PAGE */
 .left{
   width:50%;
   padding:60px 40px;
@@ -59,13 +57,13 @@ body{
   margin-top:40px;
 }
 
-/* ===== RIGHT PAGE ===== */
+/* RIGHT PAGE */
 .right{
   width:50%;
   padding:60px 40px;
 }
 
-/* ===== CARDS ===== */
+/* CARDS */
 .card{
   background:#fff;
   border-radius:18px;
@@ -92,7 +90,7 @@ body{
   margin-bottom:15px;
 }
 
-/* ===== BUTTON ===== */
+/* BUTTON */
 .btn{
   display:inline-block;
   padding:10px 22px;
@@ -109,7 +107,7 @@ body{
   transform:scale(1.05);
 }
 
-/* ===== SUPPORT ===== */
+/* SUPPORT */
 .support{
   text-align:center;
   font-size:14px;
@@ -123,7 +121,7 @@ body{
   font-weight:600;
 }
 
-/* ===== PAGE FADE EFFECT ===== */
+/* FADE */
 .fade{
   opacity:0;
   transform:translateY(40px);
@@ -135,16 +133,14 @@ body{
   transform:translateY(0);
 }
 
-/* ===== MOBILE ===== */
+/* MOBILE */
 @media(max-width:900px){
   .book{
     flex-direction:column;
   }
-
   .left,.right{
     width:100%;
   }
-
   .left{
     border-right:none;
     border-bottom:1px solid rgba(0,0,0,0.15);
